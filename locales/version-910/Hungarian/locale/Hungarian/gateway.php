@@ -64,10 +64,10 @@ $locale['gateway_058'] = "felhasználó";
 $locale['gateway_059'] = "jelszó";
 
 // General
-$locale['gateway_060'] = "Mennyi a";
+$locale['gateway_060'] = "Mennyi:";
 $locale['gateway_061'] = " ";
 $locale['gateway_062'] = "Szóval";
-$locale['gateway_063'] = "Számmal";
+$locale['gateway_063'] = "= ? Számmal add meg!";
 $locale['gateway_064'] = "Meg kell válaszolni a kérdést";
 $locale['gateway_065'] = "Folytatás";
 
