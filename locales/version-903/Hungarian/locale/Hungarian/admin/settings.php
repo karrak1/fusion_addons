@@ -328,3 +328,7 @@ $locale['security_007'] = "Az összes rendszeres munkamenet sikeresen törölve 
 $locale['security_008'] = "Űrlap Token";
 $locale['security_009'] = "Űrlap Tokenek Száma";
 $locale['security_010'] = "Fusion Regisztráció Védelem";
+$locale['security_011'] = "Védelmi Mód";
+$locale['security_012'] = "Szöveg";
+$locale['security_013'] = "Szám";
+$locale['security_014'] = "Mindkettő";
