@@ -126,3 +126,5 @@ $locale['search_msg_101'] = 'Sikertelen rendszer biztonsági intézkedések';
 $locale['search_msg_102'] = 'Oldalt nem sikerült betölteni';
 $locale['search_msg_103'] = 'Keresendő szöveg túl rövid';
 $locale['search_msg_104'] = 'Nincs találat';
+
+$locale['new_update_avalaible'] = "Elérhető egy új [LINK]PHP-Fusion v[VERSION] frissítés [/LINK]. Kérem frissítsen!";
