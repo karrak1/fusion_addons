@@ -406,6 +406,7 @@ $locale['show'] = "Mutat";
 $locale['actions'] = "Művelet";
 $locale['language'] = "Nyelv";
 $locale['loading'] = "Betöltés...";
+$locale['manage'] = "Kezel";
 // Persons & Identifiers
 $locale['you'] = "Te";
 $locale['me'] = "Én";
