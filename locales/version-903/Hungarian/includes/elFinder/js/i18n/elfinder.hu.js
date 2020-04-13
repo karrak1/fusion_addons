@@ -75,17 +75,17 @@
 			'errCopyInItself'      : '"$1" nem másolható saját magára.',
 			'errRm'                : '"$1" törlése nem sikerült.',
 			'errRmSrc'             : 'Forrásfájl(ok) eltávolítása sikertelen.',
-			'errExtract'           : 'Unable to extract files from "$1".',
-			'errArchive'           : 'Unable to create archive.',
+			'errExtract'           : 'Nem sikerült kikibontani a "$1" fájlokat.',
+			'errArchive'           : 'Nem sikerült létrehozni az archívumot.',
 			'errArcType'           : 'Nem támogatott archívum típus.',
-			'errNoArchive'         : 'File is not archive or has unsupported archive type.',
-			'errCmdNoSupport'      : 'Backend does not support this command.',
-			'errReplByChild'       : 'The folder “$1” can’t be replaced by an item it contains.',
-			'errArcSymlinks'       : 'For security reason denied to unpack archives contains symlinks or files with not allowed names.', // edited 24.06.2012
-			'errArcMaxSize'        : 'Archive files exceeds maximum allowed size.',
-			'errResize'            : 'Unable to resize "$1".',
-			'errResizeDegree'      : 'Invalid rotate degree.',  // added 7.3.2013
-			'errResizeRotate'      : 'Unable to rotate image.',  // added 7.3.2013
+			'errNoArchive'         : 'A fájl nem archív, vagy nem támogatott archívumtípust tartalmaz.',
+			'errCmdNoSupport'      : 'A backend nem támogatja ezt a parancsot.',
+			'errReplByChild'       : 'Az „$1” mappát nem lehet helyettesíteni egy abban található elemmel.',
+			'errArcSymlinks'       : 'Biztonsági okokból az archívumok kicsomagolásának megtagadása szimbolikus linkeket vagy fájlokat tartalmaz, amelyek nem engedélyezettek.', // edited 24.06.2012
+			'errArcMaxSize'        : 'Az archív fájlok meghaladják a megengedett legnagyobb méretet.',
+			'errResize'            : 'Nem lehet átméretezni a (z) "$1".',
+			'errResizeDegree'      : 'Érvénytelen forgatási fok.',  // added 7.3.2013
+			'errResizeRotate'      : 'Nem lehet elforgatni a képet.',  // added 7.3.2013
 			'errResizeSize'        : 'Invalid image size.',  // added 7.3.2013
 			'errResizeNoChange'    : 'Image size not changed.',  // added 7.3.2013
 			'errUsupportType'      : 'Unsupported file type.',
@@ -122,7 +122,7 @@
 			'cmdhome'      : 'Főkönyvtár',
 			'cmdinfo'      : 'Tulajdonságok',
 			'cmdmkdir'     : 'Új mappa',
-			'cmdmkdirin'   : 'Into new folder', // from v2.1.7 added 19.2.2016
+			'cmdmkdirin'   : 'Új mappába', // from v2.1.7 added 19.2.2016
 			'cmdmkfile'    : 'Új fájl',
 			'cmdopen'      : 'Megnyitás',
 			'cmdpaste'     : 'Beillesztés',
@@ -133,35 +133,35 @@
 			'cmdsearch'    : 'Keresés',
 			'cmdup'        : 'Ugrás a szülőmappába',
 			'cmdupload'    : 'Feltöltés',
-			'cmdview'      : 'View',
-			'cmdresize'    : 'Resize & Rotate',
+			'cmdview'      : 'Nézet',
+			'cmdresize'    : 'Átméretezés és forgatás',
 			'cmdsort'      : 'Rendezés',
-			'cmdnetmount'  : 'Mount network volume', // added 18.04.2012
-			'cmdnetunmount': 'Unmount', // from v2.1 added 30.04.2012
-			'cmdplaces'    : 'To Places', // added 28.12.2014
-			'cmdchmod'     : 'Change mode', // from v2.1 added 20.6.2015
-			'cmdopendir'   : 'Open a folder', // from v2.1 added 13.1.2016
-			'cmdcolwidth'  : 'Reset column width', // from v2.1.13 added 12.06.2016
+			'cmdnetmount'  : 'Csatlakoztassa a hálózat hangerejét', // added 18.04.2012
+			'cmdnetunmount': 'Leválaszt', // from v2.1 added 30.04.2012
+			'cmdplaces'    : 'Helyekhez', // added 28.12.2014
+			'cmdchmod'     : 'Módváltás', // from v2.1 added 20.6.2015
+			'cmdopendir'   : 'Mappa megnyitása', // from v2.1 added 13.1.2016
+			'cmdcolwidth'  : 'Állítsa vissza az oszlop szélességét', // from v2.1.13 added 12.06.2016
 
 			/*********************************** buttons ***********************************/
 			'btnClose'  : 'Bezár',
 			'btnSave'   : 'Ment',
 			'btnRm'     : 'Töröl',
-			'btnApply'  : 'Apply',
+			'btnApply'  : 'Alkalmaz',
 			'btnCancel' : 'Mégsem',
 			'btnNo'     : 'Nem',
 			'btnYes'    : 'Igen',
-			'btnMount'  : 'Mount',  // added 18.04.2012
+			'btnMount'  : 'Csatlakoztat',  // added 18.04.2012
 			'btnApprove': 'Goto $1 & approve', // from v2.1 added 26.04.2012
-			'btnUnmount': 'Unmount', // from v2.1 added 30.04.2012
-			'btnConv'   : 'Convert', // from v2.1 added 08.04.2014
-			'btnCwd'    : 'Here',      // from v2.1 added 22.5.2015
-			'btnVolume' : 'Volume',    // from v2.1 added 22.5.2015
-			'btnAll'    : 'All',       // from v2.1 added 22.5.2015
-			'btnMime'   : 'MIME Type', // from v2.1 added 22.5.2015
-			'btnFileName':'Filename',  // from v2.1 added 22.5.2015
-			'btnSaveClose': 'Save & Close', // from v2.1 added 12.6.2015
-			'btnBackup' : 'Backup', // fromv2.1 added 28.11.2015
+			'btnUnmount': 'Leválaszt', // from v2.1 added 30.04.2012
+			'btnConv'   : 'Átalakít', // from v2.1 added 08.04.2014
+			'btnCwd'    : 'Itt',      // from v2.1 added 22.5.2015
+			'btnVolume' : 'Hangerő',    // from v2.1 added 22.5.2015
+			'btnAll'    : 'Összes',       // from v2.1 added 22.5.2015
+			'btnMime'   : 'MIME Tipus', // from v2.1 added 22.5.2015
+			'btnFileName':'Fájl név',  // from v2.1 added 22.5.2015
+			'btnSaveClose': 'Mentés és Kilépés', // from v2.1 added 12.6.2015
+			'btnBackup' : 'Biztonsági mentés', // fromv2.1 added 28.11.2015
 
 			/******************************** notifications ********************************/
 			'ntfopen'     : 'Mappa megnyitás',
