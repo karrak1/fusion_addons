@@ -86,26 +86,26 @@
 			'errResize'            : 'Nem lehet átméretezni a (z) "$1".',
 			'errResizeDegree'      : 'Érvénytelen forgatási fok.',  // added 7.3.2013
 			'errResizeRotate'      : 'Nem lehet elforgatni a képet.',  // added 7.3.2013
-			'errResizeSize'        : 'Invalid image size.',  // added 7.3.2013
-			'errResizeNoChange'    : 'Image size not changed.',  // added 7.3.2013
-			'errUsupportType'      : 'Unsupported file type.',
-			'errNotUTF8Content'    : 'File "$1" is not in UTF-8 and cannot be edited.',  // added 9.11.2011
-			'errNetMount'          : 'Unable to mount "$1".', // added 17.04.2012
-			'errNetMountNoDriver'  : 'Unsupported protocol.',     // added 17.04.2012
-			'errNetMountFailed'    : 'Mount failed.',         // added 17.04.2012
-			'errNetMountHostReq'   : 'Host required.', // added 18.04.2012
-			'errSessionExpires'    : 'Your session has expired due to inactivity.',
-			'errCreatingTempDir'   : 'Unable to create temporary directory: "$1"',
-			'errFtpDownloadFile'   : 'Unable to download file from FTP: "$1"',
-			'errFtpUploadFile'     : 'Unable to upload file to FTP: "$1"',
-			'errFtpMkdir'          : 'Unable to create remote directory on FTP: "$1"',
-			'errArchiveExec'       : 'Error while archiving files: "$1"',
-			'errExtractExec'       : 'Error while extracting files: "$1"',
-			'errNetUnMount'        : 'Unable to unmount', // from v2.1 added 30.04.2012
-			'errConvUTF8'          : 'Not convertible to UTF-8', // from v2.1 added 08.04.2014
-			'errFolderUpload'      : 'Try Google Chrome, If you\'d like to upload the folder.', // from v2.1 added 26.6.2015
-			'errSearchTimeout'     : 'Timed out while searching "$1". Search result is partial.', // from v2.1 added 12.1.2016
-			'errReauthRequire'     : 'Re-authorization is required.', // from v2.1.10 added 3.24.2016
+			'errResizeSize'        : 'Érvénytelen képméret.',  // added 7.3.2013
+			'errResizeNoChange'    : 'A kép mérete nem változott.',  // added 7.3.2013
+			'errUsupportType'      : 'Nem támogatott fájl típus.',
+			'errNotUTF8Content'    : 'Az "$1" fájl nincs az UTF-8-ban, és nem szerkeszthető.',  // added 9.11.2011
+			'errNetMount'          : 'Nem lehet beilleszteni a(z) "$1".', // added 17.04.2012
+			'errNetMountNoDriver'  : 'Nem támogatott protokoll.',     // added 17.04.2012
+			'errNetMountFailed'    : 'A csatlakozás nem sikerült.',         // added 17.04.2012
+			'errNetMountHostReq'   : 'Host szükséges.', // added 18.04.2012
+			'errSessionExpires'    : 'A session inaktivitás miatt lejárt.',
+			'errCreatingTempDir'   : 'Nem lehet ideiglenes könyvtárat létrehozni: "$1"',
+			'errFtpDownloadFile'   : 'Nem lehet letölteni a fájlt az FTP-ről: "$1"',
+			'errFtpUploadFile'     : 'Nem lehet feltölteni a fájlt az FTP-re: "$1"',
+			'errFtpMkdir'          : 'Nem sikerült távoli könyvtárat létrehozni az FTP-n: "$1"',
+			'errArchiveExec'       : 'Hiba a fájlok archiválásakor: "$1"',
+			'errExtractExec'       : 'Hiba a fájlok kibontásakor: "$1"',
+			'errNetUnMount'        : 'Nem lehet leválasztani', // from v2.1 added 30.04.2012
+			'errConvUTF8'          : 'Nem konvertálható UTF-8-ra', // from v2.1 added 08.04.2014
+			'errFolderUpload'      : 'Próbálja ki a Google Chrome-ot, ha szeretné feltölteni a mappát.', // from v2.1 added 26.6.2015
+			'errSearchTimeout'     : 'dőtúllépés a(z) "$1" keresése közben. A keresési eredmény részleges.', // from v2.1 added 12.1.2016
+			'errReauthRequire'     : 'Új engedélyre van szükség.', // from v2.1.10 added 3.24.2016
 
 			/******************************* commands names ********************************/
 			'cmdarchive'   : 'Archívum létrehozása',
@@ -166,13 +166,13 @@
 			/******************************** notifications ********************************/
 			'ntfopen'     : 'Mappa megnyitás',
 			'ntffile'     : 'Fájl megnyitás',
-			'ntfreload'   : 'Reload folder content',
+			'ntfreload'   : 'A mappa tartalmának újratöltése',
 			'ntfmkdir'    : 'Mappa létrehozása',
-			'ntfmkfile'   : 'Creating files',
+			'ntfmkfile'   : 'Fájlok létrehozása',
 			'ntfrm'       : 'Fájlok törélse',
 			'ntfcopy'     : 'Fájlok másolása',
 			'ntfmove'     : 'Fájlok áthelyezése',
-			'ntfprepare'  : 'Prepare to copy files',
+			'ntfprepare'  : 'Készüljön fel a fájlok másolására',
 			'ntfrename'   : 'Fájlok átnevezése',
 			'ntfupload'   : 'Fájlok feltöltése',
 			'ntfdownload' : 'Fájlok letöltése',
@@ -180,17 +180,17 @@
 			'ntfarchive'  : 'Archívum létrehozása',
 			'ntfextract'  : 'Kibontás archívumból',
 			'ntfsearch'   : 'Fájlok keresése',
-			'ntfresize'   : 'Resizing images',
-			'ntfsmth'     : 'Doing something >_<',
-			'ntfloadimg'  : 'Loading image',
-			'ntfnetmount' : 'Mounting network volume', // added 18.04.2012
-			'ntfnetunmount': 'Unmounting network volume', // from v2.1 added 30.04.2012
-			'ntfdim'      : 'Acquiring image dimension', // added 20.05.2013
-			'ntfreaddir'  : 'Reading folder infomation', // from v2.1 added 01.07.2013
-			'ntfurl'      : 'Getting URL of link', // from v2.1 added 11.03.2014
-			'ntfchmod'    : 'Changing file mode', // from v2.1 added 20.6.2015
-			'ntfpreupload': 'Verifying upload file name', // from v2.1 added 31.11.2015
-			'ntfzipdl'    : 'Creating a file for download', // from v2.1.7 added 23.1.2016
+			'ntfresize'   : 'Képek átméretezése',
+			'ntfsmth'     : 'Csinál valamit >_<',
+			'ntfloadimg'  : 'Kép betöltése',
+			'ntfnetmount' : 'Hálózati meghajtó hozzáadása', // added 18.04.2012
+			'ntfnetunmount': 'Hálózati meghajtó leválasztása', // from v2.1 added 30.04.2012
+			'ntfdim'      : 'Képméret megállapítása', // added 20.05.2013
+			'ntfreaddir'  : 'A mappa adatainak olvasása', // from v2.1 added 01.07.2013
+			'ntfurl'      : 'A link URL-jének lekérdezése', // from v2.1 added 11.03.2014
+			'ntfchmod'    : 'A fájlmód megváltoztatása', // from v2.1 added 20.6.2015
+			'ntfpreupload': 'A feltöltött fájlnév ellenőrzése', // from v2.1 added 31.11.2015
+			'ntfzipdl'    : 'Fájl létrehozása letöltésre', // from v2.1.7 added 23.1.2016
 
 			/************************************ dates **********************************/
 			'dateUnknown' : 'Ismeretlen',
@@ -208,43 +208,43 @@
 			'msOct'       : 'okt',
 			'msNov'       : 'nov',
 			'msDec'       : 'dec',
-			'January'     : 'January',
-			'February'    : 'February',
-			'March'       : 'March',
-			'April'       : 'April',
-			'May'         : 'May',
-			'June'        : 'June',
-			'July'        : 'July',
-			'August'      : 'August',
-			'September'   : 'September',
-			'October'     : 'October',
+			'January'     : 'Január',
+			'February'    : 'Február',
+			'March'       : 'Március',
+			'April'       : 'Április',
+			'May'         : 'Május',
+			'June'        : 'Június',
+			'July'        : 'Július',
+			'August'      : 'Augusztus',
+			'September'   : 'Szeptember',
+			'October'     : 'Október',
 			'November'    : 'November',
 			'December'    : 'December',
-			'Sunday'      : 'Sunday',
-			'Monday'      : 'Monday',
-			'Tuesday'     : 'Tuesday',
-			'Wednesday'   : 'Wednesday',
-			'Thursday'    : 'Thursday',
-			'Friday'      : 'Friday',
-			'Saturday'    : 'Saturday',
-			'Sun'         : 'Sun',
-			'Mon'         : 'Mon',
-			'Tue'         : 'Tue',
-			'Wed'         : 'Wed',
-			'Thu'         : 'Thu',
-			'Fri'         : 'Fri',
-			'Sat'         : 'Sat',
+			'Sunday'      : 'Vasárnap',
+			'Monday'      : 'Hétfő',
+			'Tuesday'     : 'Kedd',
+			'Wednesday'   : 'Szerda',
+			'Thursday'    : 'Csütörtök',
+			'Friday'      : 'Péntek',
+			'Saturday'    : 'Szombat',
+			'Sun'         : 'V',
+			'Mon'         : 'H',
+			'Tue'         : 'K',
+			'Wed'         : 'Sz',
+			'Thu'         : 'Cs',
+			'Fri'         : 'P',
+			'Sat'         : 'Szo',
 
 			/******************************** sort variants ********************************/
-			'sortname'          : 'by name',
+			'sortname'          : 'név szerint',
 			'sortkind'          : 'by kind',
-			'sortsize'          : 'by size',
-			'sortdate'          : 'by date',
-			'sortFoldersFirst'  : 'Folders first',
-			'sortperm'          : 'by permission', // from v2.1.13 added 13.06.2016
-			'sortmode'          : 'by mode',       // from v2.1.13 added 13.06.2016
-			'sortowner'         : 'by owner',      // from v2.1.13 added 13.06.2016
-			'sortgroup'         : 'by group',      // from v2.1.13 added 13.06.2016
+			'sortsize'          : 'méret szerint',
+			'sortdate'          : 'dátum szerint',
+			'sortFoldersFirst'  : 'Először a mappák',
+			'sortperm'          : 'engedély alapján', // from v2.1.13 added 13.06.2016
+			'sortmode'          : 'mód szerint',       // from v2.1.13 added 13.06.2016
+			'sortowner'         : 'tulajdonos alapján',      // from v2.1.13 added 13.06.2016
+			'sortgroup'         : 'csoportok szerint',      // from v2.1.13 added 13.06.2016
 
 			/********************************** new items **********************************/
 			'untitled file.txt' : 'NewFile.txt', // added 10.11.2015
@@ -252,12 +252,12 @@
 			'Archive'           : 'NewArchive',  // from v2.1 added 10.11.2015
 
 			/********************************** messages **********************************/
-			'confirmReq'      : 'Confirmation required',
+			'confirmReq'      : 'Megerősítés szükséges',
 			'confirmRm'       : 'Valóban törölni akarja a kijelölt adatokat?<br/>Ez később nem fordítható vissza!',
-			'confirmRepl'     : 'Replace old file with new one?',
-			'confirmConvUTF8' : 'Not in UTF-8<br/>Convert to UTF-8?<br/>Contents become UTF-8 by saving after conversion.', // from v2.1 added 08.04.2014
-			'confirmNotSave'  : 'It has been modified.<br/>Losing work if you do not save changes.', // from v2.1 added 15.7.2015
-			'apllyAll'        : 'Apply to all',
+			'confirmRepl'     : 'Ki cserélje a régi fájlt újra?',
+			'confirmConvUTF8' : 'Nem UTF-8.<br/>Átalakítsam UTF-8-ra?<br/>A tartalom mentés után UTF-8 lesz..', // from v2.1 added 08.04.2014
+			'confirmNotSave'  : 'Megváltozott.<br/>Módosítások elvesznek, ha nem menti el azokat.', // from v2.1 added 15.7.2015
+			'apllyAll'        : 'Mindenre vonatkozik',
 			'name'            : 'Név',
 			'size'            : 'Méret',
 			'perms'           : 'Jogok',
@@ -275,7 +275,7 @@
 			'viewlist'        : 'Lista nézet',
 			'viewicons'       : 'Ikon nézet',
 			'places'          : 'Helyek',
-			'calc'            : 'Calculate',
+			'calc'            : 'Kiszámítja',
 			'path'            : 'Útvonal',
 			'aliasfor'        : 'Cél',
 			'locked'          : 'Zárolt',
@@ -313,24 +313,24 @@
 			'selectForUpload' : 'fájlok böngészése',
 			'moveFiles'       : 'Fájlok áthelyezése',
 			'copyFiles'       : 'Fájlok másolása',
-			'rmFromPlaces'    : 'Remove from places',
-			'aspectRatio'     : 'Aspect ratio',
-			'scale'           : 'Scale',
-			'width'           : 'Width',
-			'height'          : 'Height',
-			'resize'          : 'Resize',
-			'crop'            : 'Crop',
-			'rotate'          : 'Rotate',
-			'rotate-cw'       : 'Rotate 90 degrees CW',
-			'rotate-ccw'      : 'Rotate 90 degrees CCW',
+			'rmFromPlaces'    : 'Távolítsa el a helyekről',
+			'aspectRatio'     : 'Oldalarány',
+			'scale'           : 'Skála',
+			'width'           : 'Szélesség',
+			'height'          : 'Magasság',
+			'resize'          : 'Átméretezés',
+			'crop'            : 'Vág',
+			'rotate'          : 'Forgat',
+			'rotate-cw'       : 'Forgassa el 90 fokkal',
+			'rotate-ccw'      : 'Forgassa el 90 fokkal CCW irányban',
 			'degree'          : '°',
 			'netMountDialogTitle' : 'Mount network volume', // added 18.04.2012
-			'protocol'            : 'Protocol', // added 18.04.2012
+			'protocol'            : 'Protokoll', // added 18.04.2012
 			'host'                : 'Host', // added 18.04.2012
 			'port'                : 'Port', // added 18.04.2012
-			'user'                : 'User', // added 18.04.2012
-			'pass'                : 'Password', // added 18.04.2012
-			'confirmUnmount'      : 'Are you unmount $1?',  // from v2.1 added 30.04.2012
+			'user'                : 'Felhasználó', // added 18.04.2012
+			'pass'                : 'Jelszó', // added 18.04.2012
+			'confirmUnmount'      : 'Leválasztod $1?',  // from v2.1 added 30.04.2012
 			'dropFilesBrowser': 'Drop or Paste files from browser', // from v2.1 added 30.05.2012
 			'dropPasteFiles'  : 'Drop or Paste files and URLs here', // from v2.1 added 07.04.2014
 			'encoding'        : 'Encoding', // from v2.1 added 19.12.2014
