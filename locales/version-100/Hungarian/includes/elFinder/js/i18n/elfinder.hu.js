@@ -331,24 +331,24 @@
 			'user'                : 'Felhasználó', // added 18.04.2012
 			'pass'                : 'Jelszó', // added 18.04.2012
 			'confirmUnmount'      : 'Leválasztod $1?',  // from v2.1 added 30.04.2012
-			'dropFilesBrowser': 'Drop or Paste files from browser', // from v2.1 added 30.05.2012
-			'dropPasteFiles'  : 'Drop or Paste files and URLs here', // from v2.1 added 07.04.2014
-			'encoding'        : 'Encoding', // from v2.1 added 19.12.2014
-			'locale'          : 'Locale',   // from v2.1 added 19.12.2014
-			'searchTarget'    : 'Target: $1',                // from v2.1 added 22.5.2015
-			'searchMime'      : 'Search by input MIME Type', // from v2.1 added 22.5.2015
-			'owner'           : 'Owner', // from v2.1 added 20.6.2015
-			'group'           : 'Group', // from v2.1 added 20.6.2015
-			'other'           : 'Other', // from v2.1 added 20.6.2015
-			'execute'         : 'Execute', // from v2.1 added 20.6.2015
-			'perm'            : 'Permission', // from v2.1 added 20.6.2015
-			'mode'            : 'Mode', // from v2.1 added 20.6.2015
-			'emptyFolder'     : 'Folder is empty', // from v2.1.6 added 30.12.2015
+			'dropFilesBrowser': 'Fájlok dobása vagy beillesztése a böngészőből', // from v2.1 added 30.05.2012
+			'dropPasteFiles'  : 'A fájlok és az URL-ek eldobása vagy beillesztése', // from v2.1 added 07.04.2014
+			'encoding'        : 'Kódolás', // from v2.1 added 19.12.2014
+			'locale'          : 'Nyelv',   // from v2.1 added 19.12.2014
+			'searchTarget'    : 'Cél: $1',                // from v2.1 added 22.5.2015
+			'searchMime'      : 'Keresés a MIME típus bevitele alapján', // from v2.1 added 22.5.2015
+			'owner'           : 'Tulajdonos', // from v2.1 added 20.6.2015
+			'group'           : 'Csoport', // from v2.1 added 20.6.2015
+			'other'           : 'Egyéb', // from v2.1 added 20.6.2015
+			'execute'         : 'Végrehajt', // from v2.1 added 20.6.2015
+			'perm'            : 'Engedély', // from v2.1 added 20.6.2015
+			'mode'            : 'Mód', // from v2.1 added 20.6.2015
+			'emptyFolder'     : 'A mappa üres', // from v2.1.6 added 30.12.2015
 			'emptyFolderDrop' : 'Folder is empty\\A Drop to add items', // from v2.1.6 added 30.12.2015
 			'emptyFolderLTap' : 'Folder is empty\\A Long tap to add items', // from v2.1.6 added 30.12.2015
-			'quality'         : 'Quality', // from v2.1.6 added 5.1.2016
+			'quality'         : 'Minőség', // from v2.1.6 added 5.1.2016
 			'autoSync'        : 'Auto sync',  // from v2.1.6 added 10.1.2016
-			'moveUp'          : 'Move up',  // from v2.1.6 added 18.1.2016
+			'moveUp'          : 'Mozgatás fel',  // from v2.1.6 added 18.1.2016
 			'getLink'         : 'Get URL link', // from v2.1.7 added 9.2.2016
 			'selectedItems'   : 'Selected items ($1)', // from v2.1.7 added 2.19.2016
 			'folderId'        : 'Folder ID', // from v2.1.10 added 3.25.2016
