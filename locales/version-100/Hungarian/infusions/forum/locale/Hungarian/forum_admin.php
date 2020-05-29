@@ -12,8 +12,6 @@ $locale['510'] = "Engedélyezett formátumok:";
 $locale['511'] = "Minden típust vesszővel válassz el";
 $locale['512'] = "Témák figyelésének engedélyezése:<br /><span class='small2'>(új hozzászólásnál e-mail küldése)</span>";
 $locale['513'] = "A hírnév megjelenítése";
-$locale['518'] = "Igen";
-$locale['519'] = "Nem";
 $locale['520'] = "Fórum rang rendszer használata:";
 $locale['521'] = "Szerkesztés lehetőségének kikapcsolása:";
 $locale['522'] = "(A tagok nem módosíthatják üzeneteiket)";
@@ -152,6 +150,8 @@ $locale['forum_140'] = "Általános megjelenítési beállítások";
 $locale['forum_141'] = "Értesítések";
 $locale['forum_142'] = "Csatolmányok Beállítása";
 $locale['forum_143'] = "Üzenet Működés Beállítások";
+$locale['forum_144'] = "Fórum-hozzászólások engedélyezése";
+$locale['forum_145'] = "A hozzászólások számának megjelenítése";
 
 $locale['forum_150'] = "<strong>Profil mezők engedélyezése a fórumbejegyzésekben.</strong> A Profilmezők egyéni felhasználói információk, amelyek kezelhetők [LINK]Profil Beállítások[/LINK]";
 $locale['forum_151'] = "Ebben a kategóriában nincsenek Profil mezők.";

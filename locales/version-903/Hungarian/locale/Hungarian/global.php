@@ -250,6 +250,8 @@ $locale['global_176'] = "Adatvédelmi irányelvek";
 $locale['global_180'] = "Adminisztrátori főmenü";
 $locale['global_181'] = "Főoldal";
 $locale['global_182'] = "Megjegyzés: az admin jelszó nincs megadva, vagy hibás.";
+$locale['global_183'] = "A bejelentkezési session lejárt. Kérjük, jelentkezzen be újra.";
+// Do not add anything within global_183-190. To be reserved for code verification development.
 // Miscellaneous
 $locale['global_190'] = "Az oldal karbantartás alatt áll";
 $locale['global_191'] = "IP címed a feketelistán szerepel";
