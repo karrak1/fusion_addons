@@ -264,32 +264,6 @@ $locale['1030'] = "Készíts Open Graph metacímkéket a közösségi oldalakhoz
 $locale['1031'] = "BB kódok engedélyezése URL-ben";
 $locale['1032'] = "Felhasználói Profil engedélyezése URL ben";
 
-// Date format options (you can add/delete lines)
-// More info at: http://php.net/manual/en/function.strftime.php
-$locale['dateformats'][] = "%Y/%m/%d";
-$locale['dateformats'][] = "%Y/%m/%d";
-$locale['dateformats'][] = "%Y-%m-%d";
-$locale['dateformats'][] = "%Y.%m.%d";
-$locale['dateformats'][] = "%Y/%d/%m %H:%M";
-$locale['dateformats'][] = "%Y/%m/%d %H:%M";
-$locale['dateformats'][] = "%Y-%m-%d %H:%M";
-$locale['dateformats'][] = "%Y.%m.%d %H:%M";
-$locale['dateformats'][] = "%Y/%d/%m %H:%M:%S";
-$locale['dateformats'][] = "%Y/%m/%d %H:%M:%S";
-$locale['dateformats'][] = "%Y-%m-%d %H:%M:%S";
-$locale['dateformats'][] = "%Y.%m.%d %H:%M:%S";
-$locale['dateformats'][] = "%Y %d %B";
-$locale['dateformats'][] = "%Y. %B %d";
-$locale['dateformats'][] = "%Y %B %d";
-$locale['dateformats'][] = "%Y %B %e";
-$locale['dateformats'][] = "%Y %d %B %H:%M";
-$locale['dateformats'][] = "%Y. %B %d %H:%M";
-$locale['dateformats'][] = "%Y %B %d %H:%M";
-$locale['dateformats'][] = "%Y %B %e %H:%M";
-$locale['dateformats'][] = "%Y %d %B %H:%M:%S";
-$locale['dateformats'][] = "%Y. %B %d %H:%M:%S";
-$locale['dateformats'][] = "%Y %B %d %H:%M:%S";
-$locale['dateformats'][] = "%Y %B %e %H:%M:%S";
 $locale['error_rate'] = "Add meg az értéket.";
 $locale['error_type'] = "Add meg a kiterjesztés típusát.";
 $locale['error_width'] = "Add meg a szélességet.";
@@ -346,3 +320,4 @@ $locale['security_011'] = "Hiba naplózása";
 $locale['security_012'] = "Hiba naplózási módszer";
 $locale['security_013'] = "Fájl";
 $locale['security_014'] = "Adatbázis";
+include_once __DIR__.'/../../../includes/dateformats.php';
