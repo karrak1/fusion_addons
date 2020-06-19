@@ -255,32 +255,6 @@ $locale['1030'] = "Készíts Open Graph metacímkéket a közösségi oldalakhoz
 $locale['1031'] = "BB kódok engedélyezése URL-ben";
 $locale['1032'] = "Felhasználói Profil engedélyezése URL ben";
 
-// Date format options (you can add/delete lines)
-// More info at: http://php.net/manual/en/function.strftime.php
-$locale['dateformats'][] = "%y.%m.%d";
-$locale['dateformats'][] = "%y.%m.%d";
-$locale['dateformats'][] = "%y-%m-%d";
-$locale['dateformats'][] = "%y/%m/%d";
-$locale['dateformats'][] = "%Y.%m.%d";
-$locale['dateformats'][] = "%Y-%m-%d";
-$locale['dateformats'][] = "%Y.%m.%d %H:%M";
-$locale['dateformats'][] = "%Y-%m-%d %H:%M";
-$locale['dateformats'][] = "%Y. %m. %d. %H:%M";
-$locale['dateformats'][] = "%Y.%m.%d %H:%M:%S";
-$locale['dateformats'][] = "%Y-%m-%d %H:%M:%S";
-$locale['dateformats'][] = "%Y. %m. %d. %H:%M:%S";
-$locale['dateformats'][] = "%Y. %B %d. %H:%M";
-$locale['dateformats'][] = "%Y. %B %d. %H:%M:%S";
-$locale['dateformats'][] = "%Y. %B %d. %A, %H:%M:%S";
-$locale['dateformats'][] = "%e %B %Y";
-$locale['dateformats'][] = "%B %d %Y %H:%M";
-$locale['dateformats'][] = "%d. %B %Y %H:%M";
-$locale['dateformats'][] = "%d %B %Y %H:%M";
-$locale['dateformats'][] = "%e %B %Y %H:%M";
-$locale['dateformats'][] = "%B %d %Y %H:%M:%S";
-$locale['dateformats'][] = "%d. %B %Y %H:%M:%S";
-$locale['dateformats'][] = "%d %B %Y %H:%M:%S";
-$locale['dateformats'][] = "%e %B %Y %H:%M:%S";
 $locale['error_rate'] = "Add meg az értéket.";
 $locale['error_type'] = "Add meg a kiterjesztés típusát.";
 $locale['error_width'] = "Add meg a szélességet.";
@@ -316,8 +290,6 @@ $locale['time_settings'] = "Dátum és Idő Beállítások";
 $locale['user_settings'] = "Felhasználói Beállítások";
 $locale['theme_settings'] = "Felület Beállítások";
 
-$locale['securimage3'] = "Secure Image v.3";
-
 // Security Settings
 $locale['security_001'] = "Rendszer Sessions";
 $locale['security_002'] = "Honlap Session Beállítások";
@@ -333,3 +305,4 @@ $locale['security_011'] = "Védelmi Mód";
 $locale['security_012'] = "Szöveg";
 $locale['security_013'] = "Szám";
 $locale['security_014'] = "Mindkettő";
+include_once __DIR__.'/../../../includes/dateformats.php';
