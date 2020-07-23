@@ -27,7 +27,7 @@ if (check_post("saverating")) {
         'avatar_best_language' => LANGUAGE
     ];
     if (\defender::safe()) {
-        $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' =>$welcpmsettings['user_id'], ':votingid' => $welcpmsettings['voting_id']]);
+        $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' => $welcpmsettings['user_id'], ':votingid' => $welcpmsettings['voting_id']]);
         dbquery_insert(DB_AVATAR_BEST, $welcpmsettings, (dbrows($result) == 0 ? 'save' : 'update'));
     }
 }
@@ -88,18 +88,18 @@ if (iMEMBER && $userdata != $randuser['user_id']) {
     echo "</div>";
 }
 
-$result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid", [':userid' =>$randuser['user_id']] );
+$result = dbquery("SELECT rating, sum(rating) as rating_count FROM ".DB_AVATAR_BEST." WHERE user_id = :userid", [':userid' => $randuser['user_id']] );
 $all = 0;
 if (dbrows($result)) {
     $db = dbrows($result);
     while ($data = dbarray($result)) {
-        $all = $all + $data['rating'];
+        $all = $data['rating_count'];
     }
     echo "<div class='text-center'>[ ".ceil($all / $db)." ] ".($db > 0 ? str_repeat("<img src='".ABOP_PATH."images/star.gif' alt='*' style='vertical-align:middle' />", ceil($all / $db)) : $locale['ABOP_13'])."</div>";
     echo "<div class='text-center'>".sprintf($locale['ABOP_14'], $db)."</div>";
 
     if (iMEMBER && $userdata != $randuser['user_id']) {
-        $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' =>$randuser['user_id'], ':votingid' => $userdata]);
+        $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' => $randuser['user_id'], ':votingid' => $userdata]);
         if (dbrows($result)) {
             echo "<div class='text-center'>".sprintf($locale['ABOP_15'], dbrows($result))."</div>";
         } else {

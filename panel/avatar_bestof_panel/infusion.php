@@ -36,14 +36,6 @@ $inf_newtable[] = DB_AVATAR_BEST." (
     avatar_best_language VARCHAR(50) NOT NULL DEFAULT '".LANGUAGE."',
     PRIMARY KEY (avatar_best_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=UTF8 COLLATE=utf8_unicode_ci";
-/*$inf_newtable[1] = DB_AVATAR_BEST." (
-		avatar_best_id SMALLINT (5) UNSIGNED NOT NULL AUTO_INCREMENT,
-		tulajdonos_id SMALLINT(5),
-		ertekeles INT(5),
-		szavazott_id INT(5),
-		PRIMARY KEY (avatar_best_id)
-		) TYPE=MyISAM;";
-*/
 
 $inf_insertdbrow[] = DB_PANELS." (panel_name, panel_filename, panel_content, panel_side, panel_order, panel_type, panel_access, panel_display, panel_status, panel_url_list, panel_restriction, panel_languages) VALUES('".$inf_title."', '".$inf_folder."', '', '4', '3', 'file', '0', '1', '1', '', '3', '".fusion_get_settings('enabled_languages')."')";
 
