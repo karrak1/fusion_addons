@@ -17,6 +17,12 @@ szavazási lehetőséggel az avatarra.
 3. Nyisd meg az Adminisztrációs oldalt, majd a Rendszer lapfülnél válaszd
    a Rendszeradminisztráció-t, majd a Infusion admin-t itt válaszd ki és telepítsd a Random Avatar Értékelő Panel-t.
 
+Ha szeretnéd, hogy a felhasználók a profil megnézésekor is tudjonak szavazni akkor aktiváld a profilt.
+
+4. Nyisd meg az Adminisztrációs oldalt, majd a Felhasználók -> Profilmezők lapfülnél válaszd a Modulokból a Random Avatar Értékelő profilt,
+aktiválásnál kiválaszthatod hogy kötelező legyen e a kitöltése avagy sem (de inkább ne).
+
+
 Véletlenszerűen kiválaszt egy olyan felhasználót akinek van feltöltve a profíljába avatar.
 Amenyiben aktiváltuk a panelt a következő információkat jeleníti meg róla.
 
