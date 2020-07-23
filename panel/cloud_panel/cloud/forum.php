@@ -31,6 +31,7 @@ if (defined('FORUM_EXIST')) {
     if (dbrows($result)) {
         while ($data = dbarray($result)) {
             $cloud[] = [
+                'title'     => $locale['forums'],
                 'term'      => $data['subject'],
                 'catid'     => $data['id'],
                 'cloudlink' => FORUM."viewthread.php?thread_id==".$data['id']

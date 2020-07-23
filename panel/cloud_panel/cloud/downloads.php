@@ -31,6 +31,7 @@ if (defined('DOWNLOADS_EXIST')) {
     if (dbrows($result)) {
         while ($data = dbarray($result)) {
             $cloud[] = [
+                'title'     => $locale['downloads'],
                 'term'      => $data['subject'],
                 'catid'     => $data['id'],
                 'cloudlink' => INFUSIONS."downloads/downloads.php?download_id=".$data['id']

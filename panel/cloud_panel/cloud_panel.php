@@ -28,11 +28,11 @@ if (!empty($cloud_list)) {
 
 if (!empty($cloud)) {
     $colorst = 1;
-    $limit = 15;
-    $fontsizes = [10, 12, 16, 18, 24, 30, 36];
+    $limit = 10;
+    $fontsizes = [10, 12, 16, 18, 24, 30];
     $fontsize = count($fontsizes)-1;
 
-    $rgbcolor = ['gray', 'red', 'orange', 'green', "#ffdb00", "#1c4c8c", "#d8c6f2", "#8cbd57", "#f25b17", "#bec6cf", "#1c83c8", "#e68810", "#3168d6", "#cccccc", "#000000", "#b53800", "#b9ed8b", "#9cdeff", "#9474b3"];
+    $rgbcolor = ['gray', 'red', 'orange', 'green', '#ffdb00', '#1c4c8c', '#d8c6f2', '#8cbd57', '#f25b17', '#bec6cf', '#1c83c8', '#e68810', '#3168d6', '#cccccc', '#000000', '#b53800', '#b9ed8b', '#9cdeff', '#9474b3'];
     $c1 = count($rgbcolor)-1;
     $cloudi = 0;
 
@@ -48,7 +48,8 @@ if (!empty($cloud)) {
         if ($cloudi >= $limit) {
             break;
         }
-        echo "<a style='font-size: ".$size."px;".($colorst ? " color: ".$color.";" : "")."' href='".$t['cloudlink']."' title='".$t['term']."'>".$t['term']."</a>";
+        $title = "[ ".$t['title']. " ] ".$t['term'];
+        echo "<a style='font-size: ".$size."px;".($colorst ? " color: ".$color.";" : "")."' href='".$t['cloudlink']."' title='".$title."'>".$t['term']."</a>";
 	    $cloudi++;
     }
     closeside();
