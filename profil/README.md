@@ -5,4 +5,5 @@
 <h1>A PHP-Fusionodnak megfelelő verziót Válaszd.</h1>
 <ul>
 <li><a href="https://github.com/karrak1/fusion_addons/tree/Andromeda/profil/sex_orientation">Sexuális Beállítottság</a></li>
+<li><a href="https://github.com/karrak1/fusion_addons/tree/Andromeda/profil/hobby">Hobbi</a></li>
 </ul>
