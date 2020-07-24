@@ -6,4 +6,5 @@
 <ul>
 <li><a href="https://github.com/karrak1/fusion_addons/tree/Andromeda/profil/sex_orientation">Sexuális Beállítottság</a></li>
 <li><a href="https://github.com/karrak1/fusion_addons/tree/Andromeda/profil/hobby">Hobbi</a></li>
+<li><a href="https://github.com/karrak1/fusion_addons/tree/Andromeda/profil/google_map">Google Térkép</a></li>
 </ul>
