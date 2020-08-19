@@ -12,6 +12,7 @@ $locale['407'] = "PHP-Fusion verzió";
 $locale['408'] = "Adatbázis előtag";
 $locale['409'] = "Cookie előtag";
 $locale['410'] = "Böngésző és OS";
+$locale['PHPI_411'] = "Fordította:"; // If you helped with the translation, you can write your name here. Management can update credits based on recent contributions.
 //PHP settings
 $locale['420'] = "PHP beállítások";
 $locale['423'] = "Biztonságos mód";

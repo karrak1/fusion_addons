@@ -1,5 +1,5 @@
 <?php
-setlocale(LC_ALL, "hu_HU", "hu_HU.UTF-8", "hu.UTF-8", "hun_hun", "Hungarian", "hu"); // Linux Server (Windows may differ)
+$locale['setlocale'] = "hu_HU"; // https://www.php.net/manual/en/function.setlocale.php
 $locale['charset'] = "utf-8"; // ISO 639-1 - http://www.loc.gov/standards/iso639-2/php/code_list.php
 $locale['region'] = "HU"; // ISO-3166 (2 Alpha numeric) - https://www.iso.org/obp/ui/#search
 $locale['xml_lang'] = "hu";
@@ -250,8 +250,9 @@ $locale['global_176'] = "Adatvédelmi irányelvek";
 $locale['global_180'] = "Adminisztrátori főmenü";
 $locale['global_181'] = "Főoldal";
 $locale['global_182'] = "Megjegyzés: az admin jelszó nincs megadva, vagy hibás.";
-$locale['global_183'] = "A bejelentkezési session lejárt. Kérjük, jelentkezzen be újra.";
+$locale['global_183'] = "A bejelentkezési session lejárt. Kérjük, jelentkezz be újra.";
 // Do not add anything within global_183-190. To be reserved for code verification development.
+
 // Miscellaneous
 $locale['global_190'] = "Az oldal karbantartás alatt áll";
 $locale['global_191'] = "IP címed a feketelistán szerepel";
@@ -474,6 +475,14 @@ $locale['about'] = "Szerző";
 // User status
 $locale['online'] = "Online";
 $locale['offline'] = "Offline";
+// Timer
+$locale['timer_year'] = "év|évek";
+$locale['timer_month'] = "hónap|hónapok";
+$locale['timer_day'] = "nap|napok";
+$locale['timer_hour'] = "óra|órák";
+$locale['timer_minute'] = "perc|percek";
+$locale['timer_second'] = "másodperc|másodpercek";
+$locale['timer'] = "[DAYS] [AGO]";
 // Words for formatting to single and plural forms. Count of forms is language-dependent
 $locale['fmt_submission'] = "beküldés|beküldés";
 $locale['fmt_article'] = "cikkek|cikkek";
