@@ -1,14 +1,18 @@
-var locale = new Array();
-locale['wordLength'] = 'A jelszó túl rövid';
-locale['wordNotEmail'] = 'Ne használja az e-mailt, mint jelszót';
-locale['wordSimilarToUsername'] = 'A jelszó nem tartalmazhatja a felhasználónevét';
-locale['wordTwoCharacterClasses'] = 'Használjon különböző karakterosztályt';
-locale['wordRepetitions'] = 'Túl sok ismétlés';
-locale['wordSequences'] = 'Jelszava szekvenciákat tartalmaz';
-locale['weak'] = 'Gyenge';
-locale['normal'] = 'Normál';
-locale['medium'] = 'Közepes';
-locale['strong'] = 'Erős';
-locale['very-strong'] = 'Nagyon erős';
-locale['show'] = 'Mutat';
+var pwstrength_locale = {
+    wordMinLength: 'A jelszó túl rövid',
+    wordMaxLength: 'A jelszó túl hosszú',
+    wordInvalidChar: 'Jelszó érvénytelen karaktert tartalmaz',
+    wordNotEmail: 'Ne használja az e-mailt, mint jelszót',
+    wordSimilarToUsername: 'A jelszó nem tartalmazhatja a felhasználónevét',
+    wordTwoCharacterClasses: 'Használjon különböző karakterosztályt',
+    wordRepetitions: 'Túl sok ismétlés',
+    wordSequences: 'Jelszava szekvenciákat tartalmaz',
+    errorList: 'Hibák:',
+    veryWeak: 'Nagyon gyenge',
+    weak: 'Gyenge',
+    normal: 'Normál',
+    medium: 'Közepes',
+    strong: 'Erős',
+    veryStrong: 'Nagyon erős'
+}
 locale['hide'] = 'Elrejt';
