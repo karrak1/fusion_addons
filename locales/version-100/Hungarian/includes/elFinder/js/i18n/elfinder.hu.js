@@ -152,7 +152,7 @@
 			'btnNo'     : 'Nem',
 			'btnYes'    : 'Igen',
 			'btnMount'  : 'Csatlakoztat',  // added 18.04.2012
-			'btnApprove': 'Goto $1 & approve', // from v2.1 added 26.04.2012
+			'btnApprove': 'Tovább $1 és jóváhagyás', // from v2.1 added 26.04.2012
 			'btnUnmount': 'Leválaszt', // from v2.1 added 30.04.2012
 			'btnConv'   : 'Átalakít', // from v2.1 added 08.04.2014
 			'btnCwd'    : 'Itt',      // from v2.1 added 22.5.2015
@@ -344,23 +344,23 @@
 			'perm'            : 'Engedély', // from v2.1 added 20.6.2015
 			'mode'            : 'Mód', // from v2.1 added 20.6.2015
 			'emptyFolder'     : 'A mappa üres', // from v2.1.6 added 30.12.2015
-			'emptyFolderDrop' : 'Folder is empty\\A Drop to add items', // from v2.1.6 added 30.12.2015
-			'emptyFolderLTap' : 'Folder is empty\\A Long tap to add items', // from v2.1.6 added 30.12.2015
+			'emptyFolderDrop' : 'A mappa üres\\Elem eldobása', // from v2.1.6 added 30.12.2015
+			'emptyFolderLTap' : 'A mappa üres\\Hosszú koppintás elemek hozzáadásához', // from v2.1.6 added 30.12.2015
 			'quality'         : 'Minőség', // from v2.1.6 added 5.1.2016
 			'autoSync'        : 'Auto sync',  // from v2.1.6 added 10.1.2016
 			'moveUp'          : 'Mozgatás fel',  // from v2.1.6 added 18.1.2016
-			'getLink'         : 'Get URL link', // from v2.1.7 added 9.2.2016
-			'selectedItems'   : 'Selected items ($1)', // from v2.1.7 added 2.19.2016
-			'folderId'        : 'Folder ID', // from v2.1.10 added 3.25.2016
-			'offlineAccess'   : 'Allow offline access', // from v2.1.10 added 3.25.2016
-			'reAuth'          : 'To re-authenticate', // from v2.1.10 added 3.25.2016
-			'nowLoading'      : 'Now loading...', // from v2.1.12 added 4.26.2016
-			'openMulti'       : 'Open multiple files', // from v2.1.12 added 5.14.2016
-			'openMultiConfirm': 'You are trying to open the $1 files. Are you sure you want to open in browser?', // from v2.1.12 added 5.14.2016
-			'emptySearch'     : 'Search results is empty', // from v2.1.12 added 5.16.2016
-			'editingFile'     : 'You are editing a file.', // from v2.1.13 added 6.3.2016
-			'hasSelected'     : 'You have selected $1 items.', // from v2.1.13 added 6.3.2016
-			'hasClipboard'    : 'You have $1 items in the clipboard.', // from v2.1.13 added 6.3.2016
+			'getLink'         : 'URL-link letöltése', // from v2.1.7 added 9.2.2016
+			'selectedItems'   : 'Kiválasztott elemek ($1)', // from v2.1.7 added 2.19.2016
+			'folderId'        : 'Mappa ID', // from v2.1.10 added 3.25.2016
+			'offlineAccess'   : 'Offline hozzáférés engedélyezése', // from v2.1.10 added 3.25.2016
+			'reAuth'          : 'Újrahitelesítéshez', // from v2.1.10 added 3.25.2016
+			'nowLoading'      : 'Most betölt...', // from v2.1.12 added 4.26.2016
+			'openMulti'       : 'Több fájl megnyitása', // from v2.1.12 added 5.14.2016
+			'openMultiConfirm': 'Megpróbálja megnyitni a $1 fájlokat. Biztosan meg akarja nyitni a böngészőben?', // from v2.1.12 added 5.14.2016
+			'emptySearch'     : 'A keresési eredmények üresek', // from v2.1.12 added 5.16.2016
+			'editingFile'     : 'Ön egy fájlt szerkeszt.', // from v2.1.13 added 6.3.2016
+			'hasSelected'     : '$1 elemet választott ki.', // from v2.1.13 added 6.3.2016
+			'hasClipboard'    : '$1 elem van a vágólapon.', // from v2.1.13 added 6.3.2016
 
 			/********************************** mimetypes **********************************/
 			'kindUnknown'     : 'Ismeretlen',
