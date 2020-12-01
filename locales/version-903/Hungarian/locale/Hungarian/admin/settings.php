@@ -105,6 +105,8 @@ $locale['607'] = "GD1";
 $locale['608'] = "GD2";
 $locale['609'] = "Fejlesztési mód";
 $locale['610'] = "Frissítés ellenőrzés";
+$locale['611'] = "Számhatároló";
+$locale['612'] = "Számelválasztó";
 
 $locale['649'] = "Tiltott Felhasználó Nevek:";
 $locale['650'] = "További beállítások";
@@ -305,4 +307,8 @@ $locale['security_011'] = "Védelmi Mód";
 $locale['security_012'] = "Szöveg";
 $locale['security_013'] = "Szám";
 $locale['security_014'] = "Mindkettő";
+$locale['security_015'] = "Hiba naplózás";
+$locale['security_016'] = "Hiba naplózási módszer";
+$locale['security_017'] = "Fájl";
+$locale['security_018'] = "Adatbázis";
 include_once __DIR__.'/../../../includes/dateformats.php';
