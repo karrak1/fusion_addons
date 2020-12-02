@@ -1,9 +1,9 @@
 <?php
 $locale['setup_0000'] = "PHP-Fusion - Telepítő";
 $locale['setup_0002'] = "Üdvözöllek a PHP-Fusion Telepítőben";
-$locale['setup_0003'] = "A telepítő végigvezeti a szükséges lépéseken, hogy telepítse a PHP-Fusion CMS rendszert a szerveren. Amennyiben további segítségre van szüksége, kérjük látogasson el a <a class='strong' href='https://php-fusion.co.uk/infusions/wiki/documentation.php?page=208'>Online Telepítési Dokumentáció</a>.";
+$locale['setup_0003'] = "A telepítő végigvezeti a szükséges lépéseken, hogy telepítse a PHP-Fusion CMS rendszert a szerveren. Amennyiben további segítségre van szüksége, kérjük látogasson el a <a class='strong' href='https://php-fusion.co.uk/infusions/wiki/documentation.php?page_id=216'>Online Telepítési Dokumentáció</a>.";
 $locale['setup_0005'] = " Elolvastam és elfogadom a PHP-Fusion <a href='www.php-fusion.co.uk/licensing/?agpl'>használati feltételeit</a>.";
-$locale['setup_0006'] = "PHP-Fusion 9 működéséhez MINIMUM PHP 5.6.39. Szükséges, Lásd a <a href='https://www.php-fusion.co.uk/infusions/wiki/documentation.php?page=215'> rendszer követelményei </a> oldalt további információkért.";
+$locale['setup_0006'] = "PHP-Fusion 9 működéséhez MINIMUM PHP 7.0. Szükséges, Lásd a <a href='https://www.php-fusion.co.uk/infusions/wiki/documentation.php?page_id=215'> rendszer követelményei </a> oldalt további információkért.";
 $locale['setup_0007'] = "Rendszerek OPCache-t telepíteni kell <a href=\"http://php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments\"> opcache.save_comments </a> engedélyezése.";
 $locale['setup_5000'] = "A PHP-Fusion használatához el kell olvasni és elfogadni a felhasználási feltételeket.";
 $locale['setup_0010'] = "Aktuális verzió - ";
@@ -27,17 +27,17 @@ $locale['setup_0104'] = "Adatbázis konfigurálás";
 $locale['setup_0105'] = "Rendszer beállítások";
 $locale['setup_0106'] = "Admin beállítások";
 $locale['setup_0107'] = "Végső beállítások";
-$locale['setup_0109'] = "A PHP-Fusion futtatásához szükséges Apache 2.2.16 vagy nagyobb verziója és a mod_rewrite engedélyezve legyen.";
-$locale['setup_0110'] = "Mivel a beállításokat ServerTokens a httpd.conf, lehetetlen meghatározni a mod_rewrite nélkül, minimálisan Apache 2.2.16 verzióra van szükség.";
+$locale['setup_0109'] = "A PHP-Fusion futtatásához szükséges Apache 2.4 vagy nagyobb verziója és a mod_rewrite engedélyezve legyen.";
+$locale['setup_0110'] = "Mivel a beállításokat ServerTokens a httpd.conf, lehetetlen meghatározni a mod_rewrite nélkül, minimálisan Apache 2.4 verzióra van szükség.";
 $locale['setup_0112'] = "A phpinfo() funkció le van tiltva biztonsági okokból. Ha látni szeretné a szerver phpinfo() információit, változtassa meg a PHP beállításait vagy lépjen kapcsolatba a kiszolgáló rendszergazdájával.";
-$locale['setup_0113'] = "A PHP nagyon régi. PHP-Fusionnak szükség van legalább egy minimum 5.6.39 verzióra. PHP magasabb verziók 5.6.39 beépített SQL injection védelmet nyújtanak a mysql adatbázisoknak. Javasoljuk, hogy frissítse.";
+$locale['setup_0113'] = "A PHP nagyon régi. PHP-Fusionnak szükség van legalább egy minimum 7.0 verzióra. PHP magasabb verziók 7.0 beépített SQL injection védelmet nyújtanak a mysql adatbázisoknak. Javasoljuk, hogy frissítse.";
 $locale['setup_0114'] = "PHP-Fusion használatához engedélyeznie kell a PHP kiterjesztést a következő listában";
 $locale['setup_0115'] = "Engedélyezve";
 $locale['setup_0115a'] = "Nem Engedélyezve";
 $locale['setup_0116'] = "PHP OPCode gyorsítótárazás javíthatja a webhelye teljesítményét. <strong>Javasoljuk</ strong> <a href='http://php.net/manual/opcache.installation.php' target='_blank'> a gyorsítótárazást </a> szerverén telepíteni.";
 $locale['setup_0118'] = "A web szerver úgy tűnik nem támogja a PDO (PHP Data Objects)-t. Kérje tárhely szolgáltatóját a PDO támogatáshoz.";
 $locale['setup_0119a'] = "Fontolja meg a PHP memória korlátjának %memory_minimum_limit növelését, amely segít megelőzni a hibákat a telepítés folyamán.";
-$locale['setup_0119b'] = "Növelje a memória korlátot ".get_cfg_var('cfg_file_path')." fájl memory_limit paraméter szerkesztésével a majd indítsa újra a web szervert (vagy lépjen kapcsolatba a rendszergazdával vagy kérjen segítséget tárhely szolgáltatójától).";
+$locale['setup_0119b'] = "Növelje a memória korlátot [CFG_FILE_PATH] fájl memory_limit paraméter szerkesztésével a majd indítsa újra a web szervert (vagy lépjen kapcsolatba a rendszergazdával vagy kérjen segítséget tárhely szolgáltatójától).";
 $locale['setup_0119c'] = "Lépjen kapcsolatba a rendszergazdával, vagy a szolgáltató adhat segítséget a PHP memória korlát növeléséhez.";
 // Buttons
 $locale['setup_0120'] = "Beállítások befejezve";
@@ -61,7 +61,7 @@ $locale['setup_0143'] = "A megadott tábla előtag már használatban van, és f
 $locale['setup_0144'] = "Adatbázis diagnosztika Elvégezve";
 // Step 1
 $locale['setup_1000'] = "Kérjük válassza ki a kívánt nyelvet:";
-$locale['setup_1001'] = "További nyelveket itt találhatsz: <a href='https://www.php-fusion.co.uk/php_fusion_9_downloads.php'><strong>PHP-Fusion hivatalos támogatási oldal</strong></a>";
+$locale['setup_1001'] = "További nyelveket itt találhatsz: <a href='https://translations.phpfusion.com/'><strong>PHP-Fusion hivatalos támogatási oldal</strong></a>";
 $locale['setup_1002'] = "Üdvözöllek a PHP-Fusion 9 helyreállítási módba.";
 $locale['setup_1003'] = "Már installálva van egy rendszer.<br/>Kérjük válassz a következőkből a folytatáshoz.";
 $locale['setup_1004'] = "Új Telepítés";
