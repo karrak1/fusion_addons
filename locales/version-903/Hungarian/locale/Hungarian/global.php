@@ -1,14 +1,14 @@
 <?php
 $locale['setlocale'] = "hu_HU"; // https://www.php.net/manual/en/function.setlocale.php
-$locale['charset'] = "utf-8"; // ISO 639-1 - http://www.loc.gov/standards/iso639-2/php/code_list.php
-$locale['region'] = "HU"; // ISO-3166 (2 Alpha numeric) - https://www.iso.org/obp/ui/#search
-$locale['xml_lang'] = "hu";
-$locale['short_lang_name'] = "hu";
+$locale['charset'] = "utf-8"; // https://www.iana.org/assignments/character-sets/character-sets.xhtml
+$locale['region'] = "HU"; // ISO-3166 (Alpha-2 code) https://www.iso.org/obp/ui/#search
+$locale['xml_lang'] = "hu"; // ISO 639-1 Code http://www.loc.gov/standards/iso639-2/php/code_list.php
+$locale['short_lang_name'] = "hu"; // ISO 639-1 Code http://www.loc.gov/standards/iso639-2/php/code_list.php
 $locale['tinymce'] = "hu"; // refer to path includes/jscripts/tinymce/langs/{value}.js
 $locale['select2'] = "hu"; // refer to path includes/dynamics/assets/select2/select2_locale_{value}.js
 $locale['phpmailer'] = "hu"; // refer to path includes/classes/PHPMailer/language/phpmailer.lang-{value}.php
 $locale['filemanager'] = "hu"; // refer to path includes/elFinder/js/i18n/{value}.js
-$locale['datepicker'] = "hu"; // // refer to path includes/dynamics/assets/datepicker/locale/{value}.js
+$locale['datepicker'] = "hu"; // refer to path includes/dynamics/assets/datepicker/locale/{value}.js
 $locale['datepicker_js'] = "YYYY-M-DD H:mm:ss";
 $locale['datepicker_php'] = "Y-m-d H:i:s";
 $locale['password_strength'] = "hu"; // refer to path includes/dynamics/assets/password/lang/{value}.js
