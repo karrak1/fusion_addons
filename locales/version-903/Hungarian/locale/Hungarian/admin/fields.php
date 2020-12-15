@@ -124,6 +124,7 @@ $locale['fields_0512'] = "Helyszín";
 $locale['fields_0513'] = "Szám";
 $locale['fields_0514'] = "E-mail";
 $locale['fields_0515'] = "Web Url";
+$locale['fields_0516'] = "Elérhetőség";
 
 $locale['fields_0600'] = "%s alkategória van ebben a kategóriában";
 $locale['fields_0601'] = "%s mező van ebben a kategóriában";
