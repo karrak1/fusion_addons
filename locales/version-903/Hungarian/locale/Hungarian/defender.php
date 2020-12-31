@@ -17,6 +17,7 @@ $locale['error_invalid_theme'] = "Kérem válaszon felületet"; // to be moved
 $locale['error_input_checkbox'] = "Kérjük, jelölje be a jelölőnégyzetet"; // to be moved
 $locale['error_input_file'] = "Kérem válaszon filét";
 $locale['error_secure_file'] = "A feltöltött fájl elutasításra került a rosszindulatú tartalom miatt.";
+$locale['error_input_login'] = "Hibás felhasználónév vagy jelszó";
 // Admin Login
 $locale['cookie_title'] = "A Session lejárt";
 $locale['cookie_description'] = "Nincs érvényesítve vagy a session-öd lejárt. Kérlek jelentkezz be újra a folytatáshoz.";
