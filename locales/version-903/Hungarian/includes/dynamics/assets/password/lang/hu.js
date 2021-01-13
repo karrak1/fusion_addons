@@ -15,4 +15,3 @@ var pwstrength_locale = {
     strong: 'Erős',
     veryStrong: 'Nagyon erős'
 }
-locale['hide'] = 'Elrejt';
