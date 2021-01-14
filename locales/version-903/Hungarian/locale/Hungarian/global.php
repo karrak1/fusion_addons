@@ -196,6 +196,7 @@ $locale['global_126'] = "üzeneted van";
 $locale['global_127'] = "üzeneted van";
 $locale['global_128'] = "beküldés érkezett";
 $locale['global_129'] = "beküldés érkezett";
+$locale["global_130"] = "A(z) %s panel nem található";
 // User Menu
 $locale['UM060'] = "Bejelentkezés";
 $locale['UM061'] = "Felhasználónév";
