@@ -296,6 +296,8 @@ $locale['global_409'] = "Ez a felhasználó biztonsági okokból ki lett tiltva.
 $locale['global_410'] = "Indoklás: ";
 $locale['global_411'] = "Ez a felhasználó el lett távolítva.";
 $locale['global_412'] = "Ez a felhasználó anonimizálva lett, valószínűleg inaktivitás miatt.";
+$locale['global_413'] = "A felhasználónév foglalt";
+$locale['global_414'] = "A felhasználónév nem foglalt";
 // Flood control
 $locale['global_440'] = "Flood miatti automatikus kitiltás";
 $locale['global_441'] = "Felhasználóneved kitiltva - [SITENAME]";
