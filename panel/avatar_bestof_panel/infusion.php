@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: infusion_db.php
 | Author: karrak
@@ -26,7 +26,12 @@ $inf_developer = "karrak";
 $inf_email = "admin@fusionhu.com";
 $inf_weburl = "https://fusionhu.com";
 $inf_folder = "avatar_bestof_panel";
-$inf_image = "cloud.png";
+$inf_image = "avatar_bestof.svg";
+
+$inf_mlt[] = [
+    'title'  => $inf_title,
+    'rights' => "ABOP"
+];
 
 $inf_newtable[] = DB_AVATAR_BEST." (
     avatar_best_id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -38,11 +43,6 @@ $inf_newtable[] = DB_AVATAR_BEST." (
 ) ENGINE=MyISAM DEFAULT CHARSET=UTF8 COLLATE=utf8_unicode_ci";
 
 $inf_insertdbrow[] = DB_PANELS." (panel_name, panel_filename, panel_content, panel_side, panel_order, panel_type, panel_access, panel_display, panel_status, panel_url_list, panel_restriction, panel_languages) VALUES('".$inf_title."', '".$inf_folder."', '', '4', '3', 'file', '0', '1', '1', '', '3', '".fusion_get_settings('enabled_languages')."')";
-
-$inf_mlt[] = [
-    'title'  => $inf_title,
-    'rights' => "ABOP"
-];
 
 $enabled_languages = makefilelist(LOCALE, ".|..", TRUE, "folders");
 if (!empty($enabled_languages)) {
@@ -81,5 +81,4 @@ if (!empty($enabled_languages)) {
 $inf_droptable[] = DB_AVATAR_BEST;
 $inf_deldbrow[] = DB_ADMIN." WHERE admin_rights = 'ABOP'";
 $inf_deldbrow[] = DB_PANELS." WHERE panel_filename = '".$inf_folder."'";
-//$inf_deldbrow[] = DB_SETTINGS_INF." WHERE settings_inf = '".$inf_folder."'";
 $inf_deldbrow[] = DB_LANGUAGE_TABLES." WHERE mlt_rights = 'ABOP'";

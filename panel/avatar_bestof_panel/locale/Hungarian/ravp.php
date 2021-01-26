@@ -1,9 +1,9 @@
 <?php
-$locale['ABOP_00'] = "Random Avatar Értékelő";
+$locale['ABOP_00'] = "Avatar Értékelő";
 $locale['ABOP_01'] = "Random Avatar Értékelő";
-$locale['ABOP_02'] = "Random Avatar Értékelő";
+$locale['ABOP_02'] = "Avatar Értékelő";
 
-$locale['ABOP_05'] = "Tag Infó";
+$locale['ABOP_05'] = "Avatar Értékelő";
 $locale['ABOP_06'] = "Csatlakozott: ";
 $locale['ABOP_07'] = "Jelenleg<br /><b>%s</b><br />településen lakik";
 $locale['ABOP_08'] = " éves";

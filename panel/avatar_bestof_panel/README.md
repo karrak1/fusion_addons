@@ -1,7 +1,7 @@
 # PHP-Fusion_Addons
 <p>PHP-Fusion Andromeda.</p>
 <p>Random Avatar Értékelő Panel</p>
-Oldalsó panelen véletlenszerően megjelenít feltöltött avatarokat, felhasználói infóval
+Oldalsó panelen véletlenszerűen megjelenít feltöltött avatarokat, felhasználói infóval
 szavazási lehetőséggel az avatarra.
 
 -=TELEPÍTÉS=-

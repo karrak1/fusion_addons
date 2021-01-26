@@ -1,9 +1,9 @@
 <?php
-$locale['ABOP_00'] = "Random Avatar Rating";
+$locale['ABOP_00'] = "Avatar Rating";
 $locale['ABOP_01'] = "Random Avatar Rating";
-$locale['ABOP_02'] = "Random Avatar Rating";
+$locale['ABOP_02'] = "Avatar Rating";
 
-$locale['ABOP_05'] = "User Info";
+$locale['ABOP_05'] = "Avatar Rating";
 $locale['ABOP_06'] = "Joined";
 $locale['ABOP_07'] = "He currently lives in <br /><b>%s</b>";
 $locale['ABOP_08'] = " year old";

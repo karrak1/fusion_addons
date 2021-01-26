@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: user_avatarbestof_include.php
 | Author: karrak
@@ -37,16 +37,16 @@ if ($profile_method == "input") {
         if (check_post("saveratingfield")) {
             $save_avatar = [
                 'user_id'              => $lookup,
-                'rating'               => form_sanitizer($_POST['saveratingfield'], '', 'saveratingfield'),
+                'rating'               => form_sanitizer($_POST['saveratingfield'], 0, 'saveratingfield'),
                 'voting_id'            => fusion_get_userdata('user_id'),
                 'avatar_best_language' => LANGUAGE
             ];
             if (\defender::safe()) {
-                $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' => $lookup, ':votingid' => fusion_get_userdata('user_id')]);
+                $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' => (int)$lookup, ':votingid' => (int)fusion_get_userdata('user_id')]);
                 dbquery_insert(DB_AVATAR_BEST, $save_avatar, (dbrows($result) == 0 ? 'save' : 'update'));
             }
         }
-        $result = dbquery("SELECT rating, sum(rating) as rating_count FROM ".DB_AVATAR_BEST." WHERE user_id = :userid", [':userid' => $lookup] );
+        $result = dbquery("SELECT rating, sum(rating) as rating_count FROM ".DB_AVATAR_BEST." WHERE user_id = :userid", [':userid' => (int)$lookup] );
         $all = 0;
         $avinf = "";
 

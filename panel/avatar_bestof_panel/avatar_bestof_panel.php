@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: avatar_bestof_panel
 | Author: karrak
@@ -19,27 +19,31 @@
 
 $locale = fusion_get_locale("", ABOP_LOCALE);
 
-if (check_post("saverating")) {
-    $welcpmsettings = [
-        'user_id'              => form_sanitizer($_POST['user_id'], '', 'user_id'),
-        'rating'               => form_sanitizer($_POST['saverating'], '', 'saverating'),
-        'voting_id'            => fusion_get_userdata('user_id'),
-        'avatar_best_language' => LANGUAGE
-    ];
-    if (\defender::safe()) {
-        $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' => $welcpmsettings['user_id'], ':votingid' => $welcpmsettings['voting_id']]);
-        dbquery_insert(DB_AVATAR_BEST, $welcpmsettings, (dbrows($result) == 0 ? 'save' : 'update'));
-    }
+$randuser = [];
+$result = dbquery("SELECT * FROM ".DB_USERS." WHERE user_avatar != '' ORDER BY RAND()");
+if (dbrows($result)) {
+    $randuser = dbarray($result);
 }
 
-$lk=""; $kor=0;
+if (!empty($randuser)) {
+    if (check_post("saverating")) {
+        $savebest = [
+            'user_id'              => form_sanitizer($_POST['user_id'], 0, 'user_id'),
+            'rating'               => form_sanitizer($_POST['saverating'], 0, 'saverating'),
+            'voting_id'            => fusion_get_userdata('user_id'),
+            'avatar_best_language' => LANGUAGE
+        ];
+        if (\defender::safe()) {
+            $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' => (int)$savebest['user_id'], ':votingid' => (int)$savebest['voting_id']]);
+            dbquery_insert(DB_AVATAR_BEST, $savebest, (dbrows($result) == 0 ? 'save' : 'update'));
+            redirect(FUSION_REQUEST);
+        }
+    }
 
+
+$loc = ""; $kor = "";
 openside($locale['ABOP_05']);
-$randuser = dbarray(dbquery("SELECT *
-    FROM ".DB_USERS."
-    WHERE user_avatar != ''
-    ORDER BY RAND()
-"));
+
 echo "<div class='panel panel-default'>";
 echo "<div class='text-center'><b>".$locale['ABOP_06']."</b></div>";
 echo "<div class='text-center'>".showdate("%Y.%m.%d.-%H:%M", $randuser['user_joined'])."</div>";
@@ -50,10 +54,8 @@ if ($userlocation) {
     $loc = ($randuser['user_location'] ? sprintf($locale['ABOP_07'], ucfirst($randuser['user_location'])) : '');
 }
 
-if ($randuser['user_birthdate'] != "0000-00-00") {
+if ($randuser['user_birthdate'] != "1900-01-01") {
     $kor = showdate('%Y', time())-substr($randuser['user_birthdate'], 0, 4)." ".$locale['ABOP_08'];
-} else {
-    $kor ="";
 }
 
 echo "<div class='text-center'>".profile_link($randuser['user_id'], trimlink($randuser['user_name'], 12), $randuser['user_status'])."<br />".$kor."<br />".$loc."</div>";
@@ -63,21 +65,23 @@ $userweb = column_exists(DB_USERS, 'user_web');
 if ($userweb) {
     if ($randuser['user_web']) {
         $web = !preg_match("@^http(s)?\:\/\/@i", $randuser['user_web']) ? "http://".$randuser['user_web'] : $randuser['user_web'];
-	    echo "<div class='text-center'><a href='".$web."' target='_blank' title='".$wb."'>".$locale['ABOP_09']."</a></div>";
+	    echo "<div class='text-center'><a href='".$web."' target='_blank' title='".$web."'>".$locale['ABOP_09']."</a></div>";
     }
 }
-echo "<div class='text-center'><b>".$locale['ABOP_10']."</b><br />".showdate("%Y.%m.%d.-%H:%M", $randuser['user_lastvisit'])."</div>";
 
-$last = (time() - $randuser['user_lastvisit']);
-$lastday = sprintf("%2d", floor($last/86400));
-if ($lastday > 0) {
-    echo "<div class='text-center'>".sprintf($locale['ABOP_11'], $lastday)."</div>";
+if (!empty($randuser['user_lastvisit'])) {
+    echo "<div class='text-center'><b>".$locale['ABOP_10']."</b><br />".showdate("%Y.%m.%d.-%H:%M", $randuser['user_lastvisit'])."</div>";
+    $last = (time() - $randuser['user_lastvisit']);
+    $lastday = sprintf("%2d", floor($last/86400));
+    if ($lastday > 0) {
+        echo "<div class='text-center'>".sprintf($locale['ABOP_11'], $lastday)."</div>";
+    }
 }
 
 $userdata = fusion_get_userdata('user_id');
 if (iMEMBER && $userdata != $randuser['user_id']) {
     echo "<div class='text-center'>";
-    echo openform('saveratingform', 'post', FUSION_REQUEST);
+    echo openform('saveratingform', 'post', FUSION_REQUEST, ['max_tokens' => 1]);
     echo form_select('saverating', $locale['ABOP_12'], 0, [
         'inner_width' => '75%',
         'options'     => range(0, 10),
@@ -88,7 +92,7 @@ if (iMEMBER && $userdata != $randuser['user_id']) {
     echo "</div>";
 }
 
-$result = dbquery("SELECT rating, sum(rating) as rating_count FROM ".DB_AVATAR_BEST." WHERE user_id = :userid", [':userid' => $randuser['user_id']] );
+$result = dbquery("SELECT rating, sum(rating) as rating_count FROM ".DB_AVATAR_BEST." WHERE user_id = :userid", [':userid' => (int)$randuser['user_id']] );
 $all = 0;
 if (dbrows($result)) {
     $db = dbrows($result);
@@ -99,7 +103,7 @@ if (dbrows($result)) {
     echo "<div class='text-center'>".sprintf($locale['ABOP_14'], $db)."</div>";
 
     if (iMEMBER && $userdata != $randuser['user_id']) {
-        $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' => $randuser['user_id'], ':votingid' => $userdata]);
+        $result = dbquery("SELECT * FROM ".DB_AVATAR_BEST." WHERE user_id = :userid AND voting_id = :votingid", [':userid' => (int)$randuser['user_id'], ':votingid' => (int)$userdata]);
         if (dbrows($result)) {
             echo "<div class='text-center'>".sprintf($locale['ABOP_15'], dbrows($result))."</div>";
         } else {
@@ -111,3 +115,4 @@ if (dbrows($result)) {
 }
 echo "</div>";
 closeside();
+}
