@@ -2,11 +2,10 @@
 /*-------------------------------------------------------+
 | PHP-Fusion Content Management System
 | Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| https://www.phpfusion.com/
 +--------------------------------------------------------+
 | Filename: user_sexorientation_include_var.php
 | Author: karrak
-| Site: https://fusionhu.com
 +--------------------------------------------------------+
 | This program is released as free software under the
 | Affero GPL license. You can redistribute it and/or
@@ -25,6 +24,7 @@ $user_field_desc = $locale['uf_orientation_desc'];
 $user_field_dbname = "user_sexorientation";
 $user_field_group = 1;
 $user_field_dbinfo = "TINYINT(1) NOT NULL DEFAULT '0'";
+$user_field_author = 'karrak';
 $user_field_default = '';
 $user_field_options = '';
 $user_field_error = '';
