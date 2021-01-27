@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: infusion.php
 | Author: karrak
@@ -35,6 +35,7 @@ $inf_mlt[] = [
 
 $inf_newtable[] = DB_WELCOME_PM." (
     wp_id TINYINT(1) UNSIGNED NOT NULL AUTO_INCREMENT,
+    wp_userid INT(11) NOT NULL DEFAULT '0',
     wp_active ENUM('0','1') DEFAULT '0',
     wp_sbox ENUM('0','1') DEFAULT '0',
     wp_language VARCHAR(50) NOT NULL DEFAULT '".LANGUAGE."',
@@ -65,7 +66,7 @@ if (!empty($enabled_languages)) {
             'language' => $language
         ];
 
-		$mlt_insertdbrow[$language][] = DB_WELCOME_PM." (wp_active, wp_sbox, wp_language) VALUES ('0', '0', '".$language."')";
+		$mlt_insertdbrow[$language][] = DB_WELCOME_PM." (wp_userid, wp_active, wp_sbox, wp_language) VALUES ('".fusion_get_userdata('user_id')."', '0', '0', '".$language."')";
 
 		$mlt_deldbrow[$language][] = DB_WELCOME_PM." WHERE wp_language = '".$language."'";
         $mlt_deldbrow[$language][] = DB_ADMIN." WHERE admin_rights = 'WPM' AND admin_language = '".$language."'";
@@ -79,7 +80,7 @@ if (!empty($enabled_languages)) {
         'page'     => 5,
         'language' => LANGUAGE
     ];
-	$inf_insertdbrow[] = DB_WELCOME_PM." (wp_active, wp_sbox, wp_language) VALUES ('0', '0', '".LANGUAGE."')";
+	$inf_insertdbrow[] = DB_WELCOME_PM." (wp_userid, wp_active, wp_sbox, wp_language) VALUES ('".fusion_get_userdata('user_id')."', '0', '0', '".LANGUAGE."')";
 }
 
 $inf_dropcol[] = ['table' => DB_USERS, 'column' => 'user_welcome'];
