@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: infusion.php
 | Author: karrak
@@ -34,13 +34,15 @@ $inf_mlt[] = [
     'rights' => "CLUD"
 ];
 
-$inf_insertdbrow[] = DB_PANELS." (panel_name, panel_filename, panel_content, panel_side, panel_order, panel_type, panel_access, panel_display, panel_status, panel_url_list, panel_restriction, panel_languages) VALUES('".$inf_title."', '".$inf_folder."', '', '4', '3', 'file', '0', '1', '1', '', '3', '".fusion_get_settings('enabled_languages')."')";
+$inf_insertdbrow[] = DB_PANELS." (panel_name, panel_filename, panel_content, panel_side, panel_order, panel_type, panel_access, panel_display, panel_status, panel_url_list, panel_restriction, panel_languages) VALUES ('".$inf_title."', '".$inf_folder."', '', '4', '3', 'file', '0', '1', '1', '', '3', '".fusion_get_settings('enabled_languages')."')";
 
 $enabled_languages = makefilelist(LOCALE, ".|..", TRUE, "folders");
 if (!empty($enabled_languages)) {
     foreach($enabled_languages as $language) {
-        if (file_exists(CLOUD_PATH."locale/".$language."/cloud.php")) {
-            include CLOUD_PATH."locale/".$language."/cloud.php";
+        if (file_exists(CLOUD_PATH.'locale/'.$language.'/cloud.php')) {
+            include CLOUD_PATH.'locale/'.$language.'/cloud.php';
+        } else {
+            include CLOUD_PATH.'locale/Hungarian/cloud.php';
         }
 
         $mlt_adminpanel[$language][] = [

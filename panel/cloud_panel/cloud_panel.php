@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: cloud_panel.php
 | Author: karrak
@@ -17,6 +17,7 @@
 +--------------------------------------------------------*/
 (defined('IN_FUSION') || exit);
 $locale = fusion_get_locale("", CLOUD_LOCALE);
+$cloud = [];
 
 $cloud_list = makefilelist(CLOUD_PATH.'cloud/', ".|..|index.php", TRUE, 'files');
 
