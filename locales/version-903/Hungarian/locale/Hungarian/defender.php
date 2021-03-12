@@ -84,7 +84,8 @@ $locale['df_423'] = "A fájlt nem töltötte fel megfelelően. Kérlek próbáld
 $locale['df_424'] = "A fájlok mérete nagyobb, mint a maximálisan megengedett határértéket. Kérjük, próbálja meg újra, és csatoljon kisebb fájlokat.";
 
 // ReCaptcha2
-$locale['grecaptcha'] = "Google Recaptcha";
+$locale['grecaptcha'] = "Google Recaptcha v2";
+$locale['grecaptcha3'] = "Google Recaptcha v3";
 $locale['grecaptcha_desc'] = "Google Recaptcha Profil Modul";
 $locale['grecaptcha_placeholder_1'] = "SITE KEY a Google-tól";
 $locale['grecaptcha_placeholder_2'] = "SECRET-KEY a Google-tól";
@@ -99,4 +100,5 @@ $locale['grecaptcha_0102b'] = "Sötét";
 $locale['grecaptcha_0103'] = "Érvényes típus";
 $locale['grecaptcha_0103a'] = "Text";
 $locale['grecaptcha_0103b'] = "Audio";
+$locale['grecaptcha_0104'] = "Pontszám";
 $locale['grecaptcha_warn'] = "Kérjük, adja meg a nyilvános és a magán reCAPTCHA kulcsot";
