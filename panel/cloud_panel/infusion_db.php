@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHPFusion Content Management System
-| Copyright (C) PHP Fusion Inc
-| https://phpfusion.com/
+| PHP-Fusion Content Management System
+| Copyright (C) PHP-Fusion Inc
+| https://www.php-fusion.co.uk/
 +--------------------------------------------------------+
 | Filename: infusion_db.php
 | Author: karrak
@@ -20,6 +20,7 @@
 \PHPFusion\Admins::getInstance()->setAdminPageIcons("CLUD", "<i class='admin-ico fa fa-fw fa-commenting'></i>");
 
 const CLOUD_PATH = INFUSIONS."cloud_panel".DIRECTORY_SEPARATOR;
+const CLOUD_LIMIT = 15;
 
 if (!defined("CLOUD_LOCALE")) {
     if (file_exists(CLOUD_PATH."locale/".LOCALESET."cloud.php")) {

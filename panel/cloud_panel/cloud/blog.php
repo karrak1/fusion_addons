@@ -6,6 +6,7 @@
 +--------------------------------------------------------+
 | Filename: blog.php
 | Author: karrak
+| Modified by : Ephyx [CORE keywords or Title]
 +--------------------------------------------------------+
 | This program is released as free software under the
 | Affero GPL license. You can redistribute it and/or
@@ -17,24 +18,35 @@
 +--------------------------------------------------------*/
 require_once __DIR__.'../../../../maincore.php';
 if (defined('BLOG_EXIST')) {
-    $limit = 15;
-    $result = dbquery("SELECT blog_id as id, blog_subject as subject
+    $result = dbquery("SELECT blog_id as id, blog_subject as subject, blog_keywords as ckeywords
         FROM ".DB_BLOG."
         ".(multilang_table("BL") ? "WHERE ".in_group('blog_language', LANGUAGE)." AND " : "WHERE ").groupaccess('blog_visibility')."
         AND (blog_start = '0'|| blog_start <= ".time().")
         AND (blog_end = '0'|| blog_end >= ".time().") AND blog_draft = '0'
         ORDER BY blog_start DESC
-        LIMIT 0,".$limit."
+        LIMIT 0,".CLOUD_LIMIT."
     ");
 
     if (dbrows($result)) {
         while($data = dbarray($result)) {
-            $cloud[] = [
-                'title'     => $locale['blog'],
-                'term'      => $data['subject'],
-                'catid'     => $data['id'],
-                'cloudlink' => INFUSIONS.'blog/blog.php?readmore='.$data['id']
-            ];
+            if (!empty($data['ckeywords'])) {
+                $ckeywords = explode(",", $data['ckeywords']);
+                foreach($ckeywords as $bkeyword) {
+                    $cloud[] = [
+                        'title'     => $locale['blog'],
+                        'term'      => $bkeyword,
+                        'catid'     => $data['id'],
+                        'cloudlink' => INFUSIONS.'blog/blog.php?readmore='.$data['id']
+                    ];
+                }
+            } else {
+                $cloud[] = [
+                    'title'     => $locale['blog'],
+                    'term'      => $data['subject'],
+                    'catid'     => $data['id'],
+                    'cloudlink' => INFUSIONS.'blog/blog.php?readmore='.$data['id']
+                ];
+            }
         }
     }
 }
