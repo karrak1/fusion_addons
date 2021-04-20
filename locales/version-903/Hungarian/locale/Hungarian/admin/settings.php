@@ -65,6 +65,9 @@ $locale['444'] = "Domain szerverek";
 $locale['444a'] = "Egyetlen webhely több tartományának konfigurálása.<br />Adja meg soronként a tartományokat. (\"enter\")";
 $locale['444b'] = "Regisztrált Domain Nevek <br /> <i>Ha engedélyezi ezt a funkciót, akkor meg kell adni az aktuális tartományt a Webhely-gazdagép alatt</i>.";
 $locale['445'] = "Érvénytelen (Teszt Célra)";
+$locale['446'] = "Általános Beállítások";
+$locale['447'] = "URL Beállítások";
+$locale['448'] = "Panel Beállítások";
 
 // Time & Date Settings
 $locale['450'] = "Dátum és idő";

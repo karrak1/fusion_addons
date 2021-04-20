@@ -43,40 +43,23 @@ $locale['ME_452'] = '%s Profiljának Szerkesztése';
 $locale['ME_453'] = '%s Tag Törlése';
 $locale['ME_454'] = "Figyelem!";
 $locale['ME_455'] = "<h2>Figyelem!</h2>
-
 <strong>%s</strong> felhasználó törlésére készülsz !
-
 Törlés során elvesznek <u>ezen felhasználó</u> által közzétett:
-
 - Cikkek
-
 - Hírek
-
 - Fórum témák. Megjegyzés: más felhasználók által ezekben a témákban írt hozzászólások, illetve a szavazások is elvesznek.
-
 - Fórum hozzászólások
-
 - Fórum csatolmányok
-
 - Kommentárok
-
 - Privát üzenetek amelyek feladója vagy címzettje ez a felhasználó
-
 - Szavazatok
-
 - Értékelések
-
 Ha ez nem egy spammer felhasználó például, akkor javasoljuk, hogy inkább tíltsd ki, függezd fel vagy anonímizáld.
-
-
-
 Valóban törölne szeretnéd ezt  felhasználót?
 ";
 $locale['ME_456'] = 'Tag Törlése';
 $locale['ME_457'] = "<h2>Figyelem!</h2>
-
 <strong>%s</strong> Új aktiválatlan felhasználó törlésére készülsz!
-
 Valóban törölne szeretnéd ezt felhasználót?
 ";
 
@@ -100,6 +83,7 @@ $locale['ME_504'] = 'Biztonságilag kitiltás';
 $locale['ME_505'] = 'Eltávolítás';
 $locale['ME_506'] = 'Anonimizálás';
 $locale['ME_507'] = 'Kikapcsolás';
+$locale['ME_508'] = 'Bejelentkezés felhasználóként';
 
 // a_message keys
 $locale['ME_550'] = 'bannolása';

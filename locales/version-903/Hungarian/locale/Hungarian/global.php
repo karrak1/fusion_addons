@@ -9,10 +9,7 @@ $locale['select2'] = "hu"; // refer to path includes/dynamics/assets/select2/sel
 $locale['phpmailer'] = "hu"; // refer to path includes/classes/PHPMailer/language/phpmailer.lang-{value}.php
 $locale['filemanager'] = "hu"; // refer to path includes/elFinder/js/i18n/{value}.js
 $locale['datepicker'] = "hu"; // refer to path includes/dynamics/assets/datepicker/locale/{value}.js
-$locale['datepicker_js'] = "YYYY-M-DD H:mm:ss";
-$locale['datepicker_php'] = "Y-m-d H:i:s";
 $locale['password_strength'] = "hu"; // refer to path includes/dynamics/assets/password/lang/{value}.js
-$locale['date_day'] = "%b %d";
 $locale['text-direction'] = "ltr";
 // Full & Short Months
 $locale['months'] = "&nbsp;|január|február|március|április|május|június|július|augusztus|szeptember|október|november|december";
@@ -83,8 +80,7 @@ $locale['status8'] = "Inaktív";
 $locale['userf1'] = "Moderátor";
 // Navigation
 $locale['global_001'] = "Navigáció";
-$locale['global_002'] = "Nincs megadva link<br />
-";
+$locale['global_002'] = "Nincs megadva link<br />";
 $locale['global_003'] = "Nincs előnézet";
 // Users Online
 $locale['global_010'] = "Felhasználók";
@@ -413,6 +409,7 @@ $locale['hide'] = "Elrejt";
 $locale['actions'] = "Művelet";
 $locale['language'] = "Nyelv";
 $locale['loading'] = "Betöltés...";
+$locale['options'] = "Opciók";
 // Persons & Identifiers
 $locale['you'] = "Te";
 $locale['me'] = "Én";
@@ -466,6 +463,8 @@ $locale['mark_as'] = "Megjelölés";
 $locale['preview'] = "Előnézet";
 $locale['custom'] = "Mód";
 $locale['submit'] = "Beküldés";
+$locale['submissions'] = "Beküldések";
+$locale['categories'] = "Kategóriák";
 // Alignment
 $locale['left'] = "Ball";
 $locale['center'] = "Közép";
@@ -479,6 +478,8 @@ $locale['about'] = "Szerző";
 // User status
 $locale['online'] = "Online";
 $locale['offline'] = "Offline";
+// Misc
+$locale['max_fs_allowed_ft'] = "Max. fájlméret %s / Engedélyezett fájltípusok %s";
 // Timer
 $locale['timer_year'] = "év|évek";
 $locale['timer_month'] = "hónap|hónapok";
