@@ -28,15 +28,12 @@ $settings = dbarray(dbquery("SELECT * FROM ".DB_WELCOME_PM.(multilang_table("WPM
 
 if (check_post("savesettings")) {
     $settings = [
-        'wp_id'     => form_sanitizer($_POST['wp_id'], 0, 'wp_id'),
-        'wp_userid' => form_sanitizer($_POST['wp_userid'], 0, 'wp_userid'),
-        'wp_active' => isset($_POST['wp_active']) ? $_POST['wp_active'] : $settings['wp_active']
+        'wp_id'       => sanitizer('wp_id', 0, 'wp_id'),
+        'wp_userid'   => sanitizer('wp_userid', 0, 'wp_userid'),
+        'wp_active'   => post('wp_active') ? 1 : 0,
+        'wp_sbox'     => post('wp_sbox') ? 1 : 0,
+        'wp_language' => LANGUAGE
     ];
-    if (check_post("wp_sbox")) {
-        $settings += [
-            'wp_sbox' => isset($_POST['wp_sbox']) ? $_POST['wp_sbox'] : $settings['wp_sbox'],
-        ];
-    }
 
     dbquery_insert(DB_WELCOME_PM, $settings, 'update');
     addNotice("success", $locale['WPM_008']);
@@ -62,11 +59,14 @@ opentable($locale['WPM_009']);
         'required'    => TRUE,
         'options'     => $userlist,
         'placeholder' => $locale['choose'],
-        'allowclear'  => TRUE,
-        'inline'      => TRUE
+        'allowclear'  => TRUE
     ]);
-    echo form_select('wp_active', $locale['WPM_010'], $settings['wp_active'], ['inline' => TRUE, 'options' => [$locale['WPM_015'], $locale['WPM_016']]]);
-    echo form_select('wp_sbox', $locale['WPM_013'], $settings['wp_sbox'], ['inline' => TRUE, 'options' => [$locale['WPM_015'], $locale['WPM_016']]]);
+    echo form_checkbox('wp_active', $locale['WPM_010'], $settings['wp_active'], [
+        'toggle' => TRUE
+    ]);
+    echo form_checkbox('wp_sbox', $locale['WPM_013'], $settings['wp_sbox'], [
+        'toggle' => TRUE
+    ]);
     echo form_button('savesettings', $locale['save'], $locale['save'], ['class' => 'btn-success']);
     echo closeform();
 
