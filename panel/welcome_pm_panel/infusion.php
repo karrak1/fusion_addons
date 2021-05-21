@@ -36,8 +36,8 @@ $inf_mlt[] = [
 $inf_newtable[] = DB_WELCOME_PM." (
     wp_id TINYINT(1) UNSIGNED NOT NULL AUTO_INCREMENT,
     wp_userid INT(11) NOT NULL DEFAULT '0',
-    wp_active INT(1) DEFAULT '0',
-    wp_sbox INT(1) DEFAULT '0',
+    wp_active INT(1) NOT NULL DEFAULT '0',
+    wp_sbox INT(1) NOT NULL DEFAULT '0',
     wp_language VARCHAR(50) NOT NULL DEFAULT '".LANGUAGE."',
 PRIMARY KEY (wp_id)
 ) ENGINE=MyISAM DEFAULT CHARSET=UTF8 COLLATE=utf8_unicode_ci";
