@@ -1,13 +1,13 @@
 <?php
 $locale['OTPI_000'] = "Online time";
 $locale['OTPI_001'] = "Website Spent time";
-$locale['OTPI_002'] = "Online idõ";
+$locale['OTPI_002'] = "Online time";
 
 $locale['OTPI_010'] = "Online time";
 $locale['OTPI_011'] = "Online Time Stats";
 $locale['OTPI_012'] = "The %s most active members";
 $locale['OTPI_013'] = "No users!";
-$locale['OTPI_014'] = "[ <a href='".INFUSIONS."online_time_panel/time_bestof.php'>Statistics</a> ]";
+$locale['OTPI_014'] = "[ <a href='".OTPI_CLASS."time_bestof.php'>Statistics</a> ]";
 $locale['OTPI_015'] = "Place";
 $locale['OTPI_016'] = "User";
 $locale['OTPI_017'] = "Total time";

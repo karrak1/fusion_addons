@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: classes/sqlhelper.php
 | Author: karrak
@@ -15,7 +15,7 @@
 | copyright header is strictly prohibited without
 | written permission from the original author(s).
 +--------------------------------------------------------*/
-namespace PHPFusion\Infusions\Online_time_panel\Classes;
+namespace PHPFusion\Online_time;
 
 class SqlHelper {
 

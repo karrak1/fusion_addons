@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: admin.php
 | Author: karrak
@@ -29,9 +29,9 @@ opentable($locale['OTPI_020']);
 
 if (check_post('savetime')) {
     $inputData = [
-        'online_time'  => form_sanitizer($_POST['online_time'], 300, 'online_time'),
-        'online_limit' => form_sanitizer($_POST['online_limit'], 1, 'online_limit'),
-        'online_page'  => form_sanitizer($_POST['online_page'], 1, 'online_page')
+        'online_time'  => sanitizer('online_time', 300, 'online_time'),
+        'online_limit' => sanitizer('online_limit', 1, 'online_limit'),
+        'online_page'  => sanitizer('online_page', 1, 'online_page')
     ];
 
     if (\defender::safe()) {

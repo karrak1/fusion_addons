@@ -4,8 +4,8 @@
 | Copyright (C) PHP Fusion Inc
 | https://phpfusion.com/
 +--------------------------------------------------------+
-| Filename: time_bestof.php
-| Author: karrak
+| Filename: autoloader.php
+| Author: PHP-Fusion Development Team
 +--------------------------------------------------------+
 | This program is released as free software under the
 | Affero GPL license. You can redistribute it and/or
@@ -15,14 +15,18 @@
 | copyright header is strictly prohibited without
 | written permission from the original author(s).
 +--------------------------------------------------------*/
-require_once __DIR__."/../../maincore.php";
-require_once THEMES."templates/header.php";
+spl_autoload_register(function ($className) {
 
-if (defined('ONLINE_TIME_PANEL_EXIST')) {
-    if (column_exists(DB_USERS, 'user_online')) {
-        require_once OTPI_CLASS."autoload.php";
-        \PHPFusion\Online_time\Online::getInstance()->BestofOnline();
+    $autoload_register_paths = [
+        'PHPFusion\\Online_time\\SqlHelper' => OTPI_CLASS."classes/sqlhelper.php",
+        'PHPFusion\\Online_time\\Online'    => OTPI_CLASS."classes/online.php",
+        //'PHPFusion\\Online_time\\RapStat'   => RAP_PATH."classes/stat.php"
+    ];
+
+    if (isset($autoload_register_paths[$className])) {
+        $fullPath = $autoload_register_paths[$className];
+        if (is_file($fullPath)) {
+            require_once $fullPath;
+        }
     }
-}
-
-require_once THEMES."templates/footer.php";
+});

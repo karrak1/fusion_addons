@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: user_fields/user_online_include.php
 | Author: karrak
@@ -16,8 +16,6 @@
 | written permission from the original author(s).
 +--------------------------------------------------------*/
 defined('IN_FUSION') || exit;
-
-require_once(INFUSIONS.'online_time_panel/user_fields/user_online_include.php');
 
 if ($profile_method == "input") {
 
@@ -35,7 +33,7 @@ if ($profile_method == "input") {
     if ($field_value) {
         $user_fields = [
             'title' => $locale['uf_online'],
-            'value' => countdown($field_value)
+            'value' => countdown(($field_value + time()))
         ];
     }
 }

@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: classes/online.php
 | Author: karrak
@@ -15,7 +15,7 @@
 | copyright header is strictly prohibited without
 | written permission from the original author(s).
 +--------------------------------------------------------*/
-namespace PHPFusion\Infusions\Online_time_panel\Classes;
+namespace PHPFusion\Online_time;
 
 class Online {
     private static $instance = NULL;
@@ -24,7 +24,7 @@ class Online {
     public $settings = [];
 
     public function __construct() {
-        include_once OTPI_CLASS."templates.php";
+        include_once OTPI_CLASS."templates/online_time.tpl.php";
         $this->settings = get_settings("online_time_panel");
         $this->sqlOnline = new SqlHelper();
         self::$locale = fusion_get_locale("", OTPI_LOCALE);
@@ -48,7 +48,6 @@ class Online {
         }
 
         $info = [
-        	'opentable' => "<i class='fa fa-clock-o fa-lg m-r-10'></i>".self::$locale['OTPI_010'],
             'stat'      => $otime,
             'stat_rows' => dbrows($result),
             'limit'     => $this->settings['online_limit']
@@ -64,10 +63,10 @@ class Online {
     }
 
     public function BestofOnline() {
-        $rowstart = filter_input(INPUT_GET, 'rowstart', FILTER_DEFAULT); //$_GET['rowstart'];
+        $limit = $this->settings['online_page'];
+        $rowstart = get_rowstart("rowstart", $limit);
         $max_rows = dbcount("(user_id)", DB_USERS, "user_online != 0".(multilang_table("OTPI") ? ' AND '.in_group('user_language', LANGUAGE) : ''));
         $rowstart = (!empty($rowstart) && isnum($rowstart) && $rowstart <= $max_rows) ? $rowstart : 0;
-        $limit = $this->settings['online_page'];
 
         $result = dbquery($this->sqlOnline->getStatQuery(['condition' => "user_online != 0", 'order' => 'user_online DESC', 'limit' => "$rowstart, $limit"]));
         $infoall = [];
@@ -80,11 +79,9 @@ class Online {
 
         $info = [
             'statall'   => $infoall,
-            'opentable' => "<i class='fa fa-pie-chart fa-lg m-r-10'></i>".self::$locale['OTPI_011'],
             'place'     => $rowstart,
             'pagenav'   => makepagenav($rowstart, $limit, $max_rows, 3)
         ];
         DisplayStat($info);
     }
-
 }

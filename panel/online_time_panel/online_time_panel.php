@@ -1,8 +1,8 @@
 <?php
 /*-------------------------------------------------------+
-| PHP-Fusion Content Management System
-| Copyright (C) PHP-Fusion Inc
-| https://www.php-fusion.co.uk/
+| PHPFusion Content Management System
+| Copyright (C) PHP Fusion Inc
+| https://phpfusion.com/
 +--------------------------------------------------------+
 | Filename: online_time_panel.php
 | Author: karrak
@@ -19,6 +19,7 @@ defined('IN_FUSION') || exit;
 
 if (defined('ONLINE_TIME_PANEL_EXIST')) {
     if (column_exists(DB_USERS, 'user_online')) {
-        \PHPFusion\Infusions\Online_time_panel\Classes\Online::getInstance()->PanelOnline();
+        require_once OTPI_CLASS."autoload.php";
+        \PHPFusion\Online_time\Online::getInstance()->PanelOnline();
     }
 }
