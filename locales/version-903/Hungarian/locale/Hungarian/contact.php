@@ -1,6 +1,6 @@
 <?php
 // Contact Form
-$locale['CT_400'] = "Kapcsolatfelvétel";
+$locale['CT_400'] = "Kapcsolat";
 $locale['CT_401'] = "Több módon is felveheted velünk a kapcsolatot. Küldhetsz egy e-mailt a következő címre:
  [SITE_EMAIL]. Ha már regisztráltál [PM_LINK]-et küldhetsz.
 Vagy kitöltheted az alábbi űrlapot, amit e-mailben kapunk meg.";
@@ -16,7 +16,7 @@ $locale['CT_420'] = "Add meg a neved";
 $locale['CT_421'] = "Add meg az e-mail címed";
 $locale['CT_422'] = "Add meg az üzenet tárgyát";
 $locale['CT_423'] = "Add meg az üzenetet";
-$locale['CT_424'] = "Meg kell adnia a helyes Ellenőrzőkódot";
+$locale['CT_424'] = "Add meg a helyes ellenőrzőkódot";
 $locale['CT_425'] = "Belső hiba: nem sikerült elküldeni az üzenetet.";
 // Message Sent
 $locale['CT_440'] = "Az üzenet elküldve";

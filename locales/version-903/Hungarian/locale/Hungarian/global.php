@@ -461,6 +461,7 @@ $locale['close'] = "Bezár";
 $locale['nopreview'] = "Nincs előnézet!";
 $locale['mark_as'] = "Megjelölés";
 $locale['preview'] = "Előnézet";
+$locale['unpreview'] = "Hide Preview";
 $locale['custom'] = "Mód";
 $locale['submit'] = "Beküldés";
 $locale['submissions'] = "Beküldések";
@@ -480,6 +481,14 @@ $locale['online'] = "Online";
 $locale['offline'] = "Offline";
 // Misc
 $locale['max_fs_allowed_ft'] = "Max. fájlméret %s / Engedélyezett fájltípusok %s";
+// DataTables
+$locale['processing_locale'] = "Please wait patiently while processing...";
+$locale['menu_locale'] = "Display _MENU_ records per page"; // Don't translate _MENU_
+$locale['zero_locale'] = "Nothing found - sorry";
+$locale['result_locale'] = "Showing page _PAGE_ of _PAGES_"; // Don't translate _PAGE_ and _PAGES_
+$locale['empty_locale'] = "No records available";
+$locale['filter_locale'] = "(Filtered from _MAX_ total records)"; // Don't translate _MAX_
+$locale['search_input_locale'] = "Search Records";
 // Timer
 $locale['timer_year'] = "év|évek";
 $locale['timer_month'] = "hónap|hónapok";

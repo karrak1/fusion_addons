@@ -5,7 +5,7 @@ $locale['BBCA_401'] = "BB kódok tesztelése";
 // Enabled BB Codes
 $locale['BBCA_402'] = "Aktív BB kódok";
 $locale['BBCA_403'] = "Név";
-$locale['BBCA_404'] = "Kép";
+$locale['BBCA_404'] = "Ikon";
 $locale['BBCA_405'] = "Leírás";
 $locale['BBCA_406'] = "Használat";
 $locale['BBCA_407'] = "Sorrend";
@@ -25,5 +25,11 @@ $locale['BBCA_418b'] = "Kérem adjon meg egy üzenetet, a BB kód tesztjéhez.";
 // Notices
 $locale['BBCA_430'] = "BB kód felfelé mozgatva.";
 $locale['BBCA_431'] = "BB kód lefelé mozgatva.";
-$locale['BBCA_432'] = "BB kód Bekapcsolva.";
-$locale['BBCA_433'] = "BB kód Kikapcsolva.";
+$locale['BBCA_432'] = "BB kód bekapcsolva.";
+$locale['BBCA_433'] = "BB kód kikapcsolva.";
+$locale['BBCA_444'] = "A BB kód frissítve";
+$locale['BBCA_445'] = "A BB kód frissítése nem sikerült";
+
+$locale['BBCA_500'] = "Elválasztó hozzáadása";
+$locale['BBCA_501'] = "Elválasztó";
+$locale['BBCA_502'] = "Elválasztó a BB kód gombok csoportosításához";

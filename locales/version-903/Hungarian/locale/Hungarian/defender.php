@@ -1,21 +1,21 @@
 <?php
 $locale['validate'] = "Kérlek ellenőrizd és érvényesítsd újra a mezőt.";
-$locale['error_request'] = "Hiba a művelet végrehajtása során"; // to be moved
-$locale['regex_error'] = "Kérjük, ellenőrizze ezt a %s mezőt"; // to be moved
+$locale['error_request'] = "Hiba a művelet végrehajtása során";
+$locale['regex_error'] = "Kérjük, ellenőrizd ezt a %s mezőt";
 // Text fields errors
-$locale['error_input_username'] = "Kérlek Adj meg érvényes Felhasználó Nevet";
-$locale['error_input_default'] = "Kérem töltse ki ezt a mezőt";
-$locale['error_input_password'] = "Kérem Adja meg a jelszót";
-$locale['error_input_email'] = "Kérem adja meg az e-mail címet";
-$locale['error_input_number'] = "Kérem adjon meg érvényes számot";
-$locale['error_input_url'] = "Adjon meg érvényes URL-t";
+$locale['error_input_username'] = "Adj meg egy érvényes felhasználónevet";
+$locale['error_input_default'] = "Kérlek töltsd ki ezt a mezőt";
+$locale['error_input_password'] = "Adj meg egy érvényes jelszót";
+$locale['error_input_email'] = "Kérlek add meg az e-mail címet";
+$locale['error_input_number'] = "Kérlek adj meg érvényes számot";
+$locale['error_input_url'] = "Kérlek adj meg egy érvényes URL-t";
 $locale['error_input_regex'] = "Adjon meg egy érvényes mintát";
-$locale['error_input_safemode'] = "Kérjük, töltse ki a mezőt megfelelően";
-$locale['error_input_check'] = "Kérjük, töltse ki helyesen a mező értékét";
+$locale['error_input_safemode'] = "Kérlek töltsd ki ezt a mezőt megfelelően";
+$locale['error_input_check'] = "Kérlek, töltsd ki helyesen a mező értékét";
 $locale['df_error_text'] = "%s hibás és beavatkozást igényel.";
-$locale['error_invalid_theme'] = "Kérem válaszon felületet"; // to be moved
-$locale['error_input_checkbox'] = "Kérjük, jelölje be a jelölőnégyzetet"; // to be moved
-$locale['error_input_file'] = "Kérem válaszon filét";
+$locale['error_invalid_theme'] = "Kérlek válassz felületet";
+$locale['error_input_checkbox'] = "Kérlek jelöld be a jelölőnégyzetet";
+$locale['error_input_file'] = "Kérlek válassz egy fájlt";
 $locale['error_secure_file'] = "A feltöltött fájl elutasításra került a rosszindulatú tartalom miatt.";
 $locale['error_input_login'] = "Hibás felhasználónév vagy jelszó";
 // Admin Login
@@ -72,6 +72,7 @@ $locale['df_402'] = "%s nem helyes jelszó.";
 $locale['df_403'] = "%s nem valós szám.";
 $locale['df_404'] = "%s nem valós dátum.";
 $locale['df_405'] = "%s nem valós URL.";
+$locale["df_406"] = "%s ismeretlen típusú halmaz.";
 $locale['df_415'] = "Hibás fájlnév.";
 $locale['df_416'] = "A feltöltött fájl túl nagy. A fájlnak ennél kisebbnek kell lennie: %s.";
 $locale['df_417'] = "A feltöltött fájl nem megengedett fájltípus. Megengedett: %s.";
@@ -83,22 +84,26 @@ $locale['df_422'] = "Ismeretlen Hiba (Query)";
 $locale['df_423'] = "A fájlt nem töltötte fel megfelelően. Kérlek próbáld újra";
 $locale['df_424'] = "A fájlok mérete nagyobb, mint a maximálisan megengedett határértéket. Kérjük, próbálja meg újra, és csatoljon kisebb fájlokat.";
 
-// ReCaptcha2
-$locale['grecaptcha'] = "Google Recaptcha v2";
-$locale['grecaptcha3'] = "Google Recaptcha v3";
-$locale['grecaptcha_desc'] = "Google Recaptcha Profil Modul";
-$locale['grecaptcha_placeholder_1'] = "SITE KEY a Google-tól";
-$locale['grecaptcha_placeholder_2'] = "SECRET-KEY a Google-tól";
-$locale['no_keys'] = "Úgy tűnik nincs beállítva kulcsod. Regisztrálj és kapd meg a RECAPTCHAd itt: [RECAPTCHA_LINK]Nyilvános kulcsok[/RECAPTCHA_LINK]";
-// here
-//$locale['review_keys'] = "<a href='https://www.google.com/recaptcha/admin' target='_BLANK'><button class='button'>Review your keys at Google reCAPTCHA</button></a>";
-$locale['grecaptcha_0100'] = "Helyi kulcs";
-$locale['grecaptcha_0101'] = "Biztonsági kulcs";
+$locale['error_rate'] = "Add meg az értéket.";
+$locale['error_type'] = "Add meg a kiterjesztés típusát.";
+$locale['error_width'] = "Add meg a szélességet.";
+$locale['error_height'] = "Add meg a magasságot.";
+$locale['error_value'] = "Adj meg egy értéket.";
+
+// ReCaptcha
+$locale['grecaptcha'] = "Google reCaptcha";
+$locale['grecaptcha3'] = "Google reCaptcha v3";
+$locale['grecaptcha_desc'] = "Google reCaptcha mező modul";
+$locale['grecaptcha_placeholder_1'] = "SITE KEY a Google-tól (publikus kulcs)";
+$locale['grecaptcha_placeholder_2'] = "SECRET-KEY a Google-tól (privát kulcs)";
+$locale['no_keys'] = "Úgy tűnik nincs beállítva kulcsod. Regisztrálj és szerezd be a reCaptcha-d itt: [RECAPTCHA_LINK]Publikus kulcs[/RECAPTCHA_LINK]";
+$locale['grecaptcha_0100'] = "Publikus kulcs";
+$locale['grecaptcha_0101'] = "Privát kulcs";
 $locale['grecaptcha_0102'] = "Felület";
 $locale['grecaptcha_0102a'] = "Világos";
 $locale['grecaptcha_0102b'] = "Sötét";
-$locale['grecaptcha_0103'] = "Érvényes típus";
+$locale['grecaptcha_0103'] = "Érvényesítési típus";
 $locale['grecaptcha_0103a'] = "Text";
 $locale['grecaptcha_0103b'] = "Audio";
 $locale['grecaptcha_0104'] = "Pontszám";
-$locale['grecaptcha_warn'] = "Kérjük, adja meg a nyilvános és a magán reCAPTCHA kulcsot";
+$locale['grecaptcha_warn'] = "Kérjük, adja meg a publikus és a privát reCaptcha kulcsot";

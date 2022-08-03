@@ -1,27 +1,27 @@
 <?php
-$locale['BLS_000'] = "Feketelista"; //406
+$locale['BLS_000'] = "Feketelista";
 //Blacklist message
-$locale['BLS_010'] = "Hibás E-mail vagy IP cím.";
-$locale['BLS_011'] = "Felhasználó Hozzáadva a Feketelistához.";
-$locale['BLS_012'] = "Felhasználó Módosítva a Feketelistában.";
-$locale['BLS_013'] = "Felhasználó törölve a feketelistáról"; //401
-$locale['BLS_014'] = "Biztosan Törölni szeretnéd ezt a Bejegyzést?";
-$locale['BLS_015'] = "A feketelista jelenleg üres."; //465
-$locale['BLS_016'] = "A feketelistás email nem valós vagy hibás."; //405
+$locale['BLS_010'] = "Hibás e-mail vagy IP cím.";
+$locale['BLS_011'] = "Bejegyzés hozzáadva.";
+$locale['BLS_012'] = "Bejegyzés módosítva.";
+$locale['BLS_013'] = "Bejegyzés törölve.";
+$locale['BLS_014'] = "Biztosan törölni szeretnéd ezt a bejegyzést?";
+$locale['BLS_015'] = "A feketelista jelenleg üres.";
+$locale['BLS_016'] = "Az e-mail cím nem érvényes.";
 
-$locale['BLS_020'] = "Feketelistás felhasználó"; //420
-$locale['BLS_021'] = "Feketelistás felhasználó szerkesztése"; //421
-$locale['BLS_022'] = "Feketelistás felhasználó Hozzáadása";
+$locale['BLS_020'] = "Feketelistás felhasználó";
+$locale['BLS_021'] = "Feketelistás felhasználó szerkesztése";
+$locale['BLS_022'] = "Feketelistás felhasználó hozzáadása";
 $locale['BLS_023'] = "Jelenleg %d megjelenítve a %d feketelistából.";
 
-$locale['BLS_030'] = "Információ"; //461
-$locale['BLS_031'] = "Adminisztrátor"; //467
-$locale['BLS_032'] = "Dátum";  //468
-$locale['BLS_033'] = "Lehetőségek"; //462
-$locale['BLS_034'] = "IP cím [STRONG]vagy[STRONG]"; //441
-$locale['BLS_035'] = "E-mail"; //442
-$locale['BLS_036'] = "Kitiltás oka"; //443
-$locale['BLS_037'] = "Kitilt";  //444
+$locale['BLS_030'] = "Információ";
+$locale['BLS_031'] = "Adminisztrátor";
+$locale['BLS_032'] = "Dátum";
+$locale['BLS_033'] = "Lehetőségek";
+$locale['BLS_034'] = "IP cím [STRONG]vagy[STRONG]";
+$locale['BLS_035'] = "E-mail";
+$locale['BLS_036'] = "Kitiltás oka";
+$locale['BLS_037'] = "Kitilt";
 $locale['BLS_038'] = "Módosít";
 $locale['BLS_039'] = "Összes kijelölése";
 
@@ -41,4 +41,4 @@ Megadhatsz teljes címet (<em>pl. valaki@valami.hu</em>), vagy az e-mail cím do
 %@domain.tld egy cím tiltása domain.tld<br />
 %.domain.tld Tilt az altartományból domain.tld<br />
 %payday% tiltja azokat a címeket amelyben szerepel /payday/ szó, melyet gyakran használnak.<br />
-domain.tld egy alias név a %@domain.tld, hogy ez kompatibilis a definiált szabályokat v7.<br />"; //440
+domain.tld egy alias név a %@domain.tld, hogy ez kompatibilis a definiált szabályokat v7.<br />";

@@ -23,5 +23,5 @@ $locale['419'] = "Beállítások";
 $locale['420'] = "Verzió";
 $locale['421'] = "Készítő";
 $locale['422'] = "További csomagok letöltése";
-$locale['423'] = "%s Infusion Telepítve";
-$locale['424'] = "%s Infusion Törölve";
+$locale['423'] = "%s infusion telepítve";
+$locale['424'] = "%s infusion törölve";

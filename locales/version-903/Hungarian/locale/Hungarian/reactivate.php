@@ -7,8 +7,8 @@ $locale['503'] = "Az aktiváló linkkel, mire rákattintottál, Nem sikerült ú
 Valószínűleg a hozzáférésed már aktiválva lett korábban. Ebben az esetben már be kellene tudnod jelentkezni [LINK]ezen az oldalon[/LINK].<br />
 Ha mégsem tudsz bejelentkezni, kérjük lépj kapcsolatba oldalunk adminisztrátorával: [SITEEMAIL]";
 // Send confirmation mail
-$locale['504'] = "Felhasználó ativálva - [SITENAME]";
-$locale['505'] = "Szia [USER_NAME],<br />
-Hozzáférésed újraaktiválásra került. Reméljük aktív tagunk leszel a későbbiekben is.<br />
-Üdvözlettel,<br />[SITEUSERNAME]<br />[SITENAME]";
+$locale['504'] = "Felhasználó azonosító aktiválva - [SITENAME]";
+$locale['505'] = "Kedves [USER_NAME]!<br/>
+Hozzáférésed újraaktiválásra került. Reméljük aktív tagunk leszel a későbbiekben is.<br/>
+Üdvözlettel,<br/>[SITEUSERNAME]<br/>[SITENAME]";
 $locale['506'] = "Felhasználó által aktiválva.";

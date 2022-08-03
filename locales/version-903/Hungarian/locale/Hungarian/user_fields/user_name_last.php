@@ -1,4 +1,4 @@
 <?php
-$locale['uf_name_last'] = "Felhasználó vezetékneve";
-$locale['uf_name_last_desc'] = "Felhasználó valódi vezetékneve.";
-$locale['uf_name_last_error'] = "Felhasználó valódi vezetékneve nem lehet üresen hagyni.";
+$locale['uf_name_last'] = "Keresztnév";
+$locale['uf_name_last_desc'] = "Felhasználó valódi keresztneve. (pl: János, Mária stb.).";
+$locale['uf_name_last_error'] = "Felhasználó valódi keresztnevét nem lehet üresen hagyni.";

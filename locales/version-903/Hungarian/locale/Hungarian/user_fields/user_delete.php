@@ -1,5 +1,5 @@
 <?php
-$locale['uf_delete'] = "Felhasználó Törlése";
-$locale['uf_delete_desc'] = "Tudja Törölni magát a felhasználó oldalunkról.";
-$locale['uf_delete_del'] = "Törlöm Magam";
-$locale['uf_delete_exit'] = "Hozzáférésed Törölve...";
+$locale['uf_delete'] = "Felhasználó törlése";
+$locale['uf_delete_desc'] = "A felhasználó önmagát tudja törölni az oldalunkról";
+$locale['uf_delete_del'] = "Törlöm magam";
+$locale['uf_delete_exit'] = "A fiók törlésre került...";

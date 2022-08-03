@@ -1,7 +1,7 @@
 var pwstrength_locale = {
     wordMinLength: 'A jelszó túl rövid',
     wordMaxLength: 'A jelszó túl hosszú',
-    wordInvalidChar: 'Jelszó érvénytelen karaktert tartalmaz',
+    wordInvalidChar: 'A jelszó érvénytelen karaktert tartalmaz',
     wordNotEmail: 'Ne használja az e-mailt, mint jelszót',
     wordSimilarToUsername: 'A jelszó nem tartalmazhatja a felhasználónevét',
     wordTwoCharacterClasses: 'Használjon különböző karakterosztályt',

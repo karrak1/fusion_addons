@@ -6,7 +6,7 @@ $locale['403'] = "keresés bármelyik kifejezésre";
 $locale['404'] = "összes kifejezést tartalmazza";
 $locale['405'] = "Keresés helye";
 $locale['406'] = "Beállítások";
-$locale['407'] = "Mindenhol";
+$locale['407'] = "A teljes weboldalon";
 $locale['408'] = "Keresés eredménye";
 //addition date
 $locale['420'] = "Keresés visszamenőleg:";
@@ -40,8 +40,8 @@ $locale['502'] = "A három karakternél rövidebb szavak (%s) figyelmen kívül 
 //Global search
 $locale['510'] = "találat a teljes oldalon";
 //
-$locale['520'] = "azonos";
-$locale['521'] = "egyezik";
-$locale['522'] = " találtam a keresési feltétel szerint";
+$locale['520'] = "azonost";
+$locale['521'] = "egyezést";
+$locale['522'] = " találtam a keresési feltétel szerint a";
 //more than 100 results
 $locale['530'] = "Kérjük pontosítsd a keresést. Összesen %s találat van ezekkel a beállításokkal. A kereső csak a 100 találatot jelenít meg.";

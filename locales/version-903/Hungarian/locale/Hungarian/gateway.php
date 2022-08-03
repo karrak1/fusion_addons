@@ -64,14 +64,14 @@ $locale['gateway_058'] = "felhasználó";
 $locale['gateway_059'] = "jelszó";
 
 // General
-$locale['gateway_060'] = "Mennyi:";
+$locale['gateway_060'] = "Mennyi a";
 $locale['gateway_061'] = " ";
 $locale['gateway_062'] = "Szóval";
-$locale['gateway_063'] = "= ? Számmal add meg!";
+$locale['gateway_063'] = "Számmal";
 $locale['gateway_064'] = "Meg kell válaszolni a kérdést";
 $locale['gateway_065'] = "Folytatás";
 
 $locale['gateway_066'] = "A válasz helytelen!";
 $locale['gateway_067'] = "Próbáld újra!";
 $locale['gateway_068'] = "Kérlek, próbáld újra később!";
-$locale['gateway_069'] = "Fusion Regisztráció Védelem";
+$locale['gateway_069'] = "Regisztráció - Robotok elleni védelem";

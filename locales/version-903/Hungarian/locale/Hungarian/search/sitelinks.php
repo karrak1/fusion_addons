@@ -1,7 +1,7 @@
 <?php
-$locale['s400'] = "Honlap Linkek";
-$locale['s401'] = "Honlap Linkek";
-$locale['s402'] = "Honlap Linket";
-$locale['s403'] = "találhatók";
-$locale['s404'] = "Oldal Link íme";
-$locale['s405'] = "Oldal Link URL";
+$locale['s400'] = "Navigáció";
+$locale['s401'] = "Navigáció";
+$locale['s402'] = "Navigáció";
+$locale['s403'] = "találtam a(z)";
+$locale['s404'] = "Navigáció címében";
+$locale['s405'] = "Navigáció URL-jében";

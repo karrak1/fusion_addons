@@ -1,3 +1,21 @@
 <?php
-$locale['U_0000'] = "Frissítés";
-$locale['U_0001'] = "Nincs elérhető Frissítés";
+$locale['U_000'] = "Frissítés";
+$locale['U_001'] = "Mielőtt frissítenél, kérlek készíts egy mentést az adatbázisodról és a fájlokról.";
+$locale['U_002'] = "Utolsó ellenőrzés: %s.";
+$locale['U_003'] = "Ellenőrizze újra";
+$locale['U_004'] = "Új frissítés érhető el";
+$locale['U_005'] = "Nem sikerült ellenőrizni a frissítéseket!";
+$locale['U_006'] = "Nincs elérhető frissítés";
+$locale['U_007'] = "Automatikusan frissíthetsz a PHPFusion %s verzióra.";
+$locale['U_008'] = "Az aktuális verzió a legfrissebb";
+$locale['U_009'] = "Letöltés: %s.";
+$locale['U_010'] = "Frissítés kicsomagolása.";
+$locale['U_011'] = "Fájl másolása.";
+$locale['U_012'] = "Adatbázis frissítése.";
+$locale['U_013'] = "Fordítások frissítése.";
+$locale['U_014'] = "A PHPFusion sikeresen frissítve.";
+$locale['U_015'] = "A frissítés nem került telepítésre. Kérlek próbáld később újra vagy töltsd le a fájlokat manuálisan.";
+$locale['U_016'] = "Fordítások frissítése";
+$locale['U_017'] = "A nyelvi fájlok sikeresen frissítve lettek.";
+$locale['U_018'] = "%s nyelvi csomag letöltése."; // %s will be replaced with language name
+$locale['U_019'] = "Jelenlegi verzió: %s";
