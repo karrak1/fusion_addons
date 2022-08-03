@@ -465,7 +465,9 @@ $locale['unpreview'] = "Hide Preview";
 $locale['custom'] = "Mód";
 $locale['submit'] = "Beküldés";
 $locale['submissions'] = "Beküldések";
+$locale['submit_access'] = "Access to Submit page";
 $locale['categories'] = "Kategóriák";
+$locale['thumbnail'] = "Thumbnail";
 // Alignment
 $locale['left'] = "Ball";
 $locale['center'] = "Közép";
