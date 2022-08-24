@@ -1,32 +1,32 @@
 <?php
-$locale['400'] = "Szerver információk";
+$locale['SRV_400'] = "Szerver információk";
 //General
-$locale['401'] = "Általános";
-$locale['402'] = "Szerver szoftver";
-$locale['403'] = "Webszerver szoftver";
-$locale['404'] = "PHP verzió";
-$locale['405'] = "PHP interfész";
-$locale['406'] = "MySQL verzió";
-$locale['406a'] = "Adatbázis illesztő";
-$locale['407'] = "PHPFusion verzió";
-$locale['408'] = "Adatbázis előtag";
-$locale['409'] = "Cookie előtag";
-$locale['410'] = "Böngésző és OS";
-$locale['411'] = "Fordította: karrak1, Ephyx "; // If you helped with the translation, you can write your name here. Management can update credits based on recent contributions.
+$locale['SRV_401'] = "Általános";
+$locale['SRV_402'] = "Szerver szoftver";
+$locale['SRV_403'] = "Webszerver szoftver";
+$locale['SRV_404'] = "PHP verzió";
+$locale['SRV_405'] = "PHP interfész";
+$locale['SRV_406'] = "MySQL verzió";
+$locale['SRV_406a'] = "Adatbázis illesztő";
+$locale['SRV_407'] = "PHPFusion verzió";
+$locale['SRV_408'] = "Adatbázis előtag";
+$locale['SRV_409'] = "Cookie előtag";
+$locale['SRV_410'] = "Böngésző és OS";
+$locale['SRV_411'] = "Fordította: karrak1, Ephyx "; // If you helped with the translation, you can write your name here. Management can update credits based on recent contributions.
 //PHP settings
-$locale['420'] = "PHP beállítások";
-$locale['423'] = "Biztonságos mód";
-$locale['424'] = "RegisterGlobals";
-$locale['425'] = "Támogatás a következőhöz";
-$locale['426'] = "Fájl feltöltés (max fájlméret)";
-$locale['428'] = "Hibák megjelenítése";
-$locale['429'] = "Nem engedélyezett funkciók";
-$locale['430'] = "n/a";
-$locale['431'] = "verzió";
+$locale['SRV_420'] = "PHP beállítások";
+$locale['SRV_423'] = "Biztonságos mód";
+$locale['SRV_424'] = "RegisterGlobals";
+$locale['SRV_425'] = "Támogatás a következőhöz";
+$locale['SRV_426'] = "Fájl feltöltés (max fájlméret)";
+$locale['SRV_428'] = "Hibák megjelenítése";
+$locale['SRV_429'] = "Nem engedélyezett funkciók";
+$locale['SRV_430'] = "n/a";
+$locale['SRV_431'] = "verzió";
 //Write permission
-$locale['440'] = "Mappák jogosultságai";
-$locale['441'] = "Írható";
-$locale['442'] = "Nem írható";
+$locale['SRV_440'] = "Mappák jogosultságai";
+$locale['SRV_441'] = "Írható";
+$locale['SRV_442'] = "Nem írható";
 //PHPinfo
-$locale['450'] = "Leírás";
-$locale['451'] = "Nem sikerült adatokat gyűjteni. Valószínűleg a phpinfo() nincs engedélyezve?";
+$locale['SRV_450'] = "Leírás";
+$locale['SRV_451'] = "Nem sikerült adatokat gyűjteni. Valószínűleg a phpinfo() nincs engedélyezve?";
