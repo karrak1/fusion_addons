@@ -16,3 +16,4 @@ $locale['news_0016'] = "Nincs kategória beállítva.";
 $locale['news_0017'] = "Szürés";
 $locale['news_0018'] = "Összes Hír mutatása";
 $locale['news_0019'] = "Hírek Galéria";
+$locale['news_0020'] = "Legolvasottabb hírek";
