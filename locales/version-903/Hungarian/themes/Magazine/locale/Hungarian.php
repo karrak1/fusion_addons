@@ -1,5 +1,5 @@
 <?php
-$locale['MG_description'] = 'PHP-Fusion Andromeda 9.03 Hivatalos felülete';
+$locale['MG_description'] = 'PHPFusion hivatalos felülete - Andromeda 9.03';
 $locale['created_by']  = 'Készítette';
 $locale['MG_001'] = 'Helló, ';
 // Templates

@@ -180,7 +180,6 @@ $locale['forum_0396'] = "Fórum kijelölésének megerősítése";
 $locale['forum_0397'] = "Nincs létrehozva Fórum kategória.";
 $locale['forum_0398'] = "Nem sikerült letölteni a fájlt";
 $locale['forum_0399'] = "Bounty Hozzáadása";
-
 $locale['forum_0400'] = "A Bounty téma frissült. Kérjük, válassza ki az adható Bounty-t";
 
 $locale['forum_0500'] = "Fórumtéma előnézet";
@@ -344,6 +343,9 @@ $locale['forum_4109'] = "A témában nincs Bounty Díj";
 $locale['forum_4110'] = "A Bounty Díjat nem adhatod saját magadnak.";
 $locale['forum_4120'] = "Nincs fórum ID vagy téma id. Kérlek hozz létre egyet.";
 $locale['forum_4121'] = "Ebben a Témában nincs aktivitás.";
+$locale['forum_4122'] = "Gratulálunk a {%thread_link%} kérdésben kapott jutalompontok megszerzéséhez.";
+$locale['forum_4123'] = "Tájékoztatlak, hogy a kiválasztott választ jutalompontokkal jutalmazták. A jutalomra adott választ {%link_start%}itt tekintheted meg.{%link_end%}";
+$locale['forum_4124'] = "Ennek a kérdésnek nyitott jutalma van";
 
 $locale['forum_p001'] = "1 napja";
 $locale['forum_p002'] = "2 napja";
@@ -354,16 +356,16 @@ $locale['forum_p060'] = "2 hónapja";
 $locale['forum_p090'] = "3 hónapja";
 $locale['forum_p180'] = "6 hónapja";
 $locale['forum_p999'] = "Összes";
-$locale['forum_perm_access'] = "Te %s megtekinteni a társalgásokat a fórumon.";
-$locale['forum_perm_bounty'] = "Te %s létrehozni Bounty-t ebben a témába.";
-$locale['forum_perm_create_poll'] = "Te %s szavazást indítani a fórumon.";
-$locale['forum_perm_download'] = "Te %s csatolmányt letölteni a fórumról.";
-$locale['forum_perm_edit_poll'] = "Te %s a szavazást módosítani a fórumon.";
-$locale['forum_perm_post'] = "Te %s témát indítani a fórumon.";
-$locale['forum_perm_rate'] = "Te %s értékelni a hozzászólásokat ezen a fórumon.";
-$locale['forum_perm_reply'] = "Te %s hozzászólni ehhez a témához.";
-$locale['forum_perm_upload'] = "Te %s csatolmányt feltölteni a fórumra.";
-$locale['forum_perm_vote_poll'] = "Te %s szavazni a fórumon.";
+$locale['forum_perm_access'] = "Neked %s megtekinteni a társalgásokat a fórumon.";
+$locale['forum_perm_bounty'] = "Neked %s létrehozni Bounty-t ebben a témába.";
+$locale['forum_perm_create_poll'] = "Neked %s szavazást indítani a fórumon.";
+$locale['forum_perm_download'] = "Neked %s csatolmányt letölteni a fórumról.";
+$locale['forum_perm_edit_poll'] = "Neked %s a szavazást módosítani a fórumon.";
+$locale['forum_perm_post'] = "Neked %s témát indítani a fórumon.";
+$locale['forum_perm_rate'] = "Neked %s értékelni a hozzászólásokat ezen a fórumon.";
+$locale['forum_perm_reply'] = "Neked %s hozzászólni ehhez a témához.";
+$locale['forum_perm_upload'] = "Neked %s csatolmányt feltölteni a fórumra.";
+$locale['forum_perm_vote_poll'] = "Neked %s szavazni a fórumon.";
 
 $locale['success-DP001'] = "Hozzászólás sikeresen eltávolítva";
 $locale['success-DP002'] = "Minden hozzászólás törölve. A téma törölve, mert nem tartalmaz több hozzászólást.";

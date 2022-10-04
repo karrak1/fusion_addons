@@ -12,6 +12,7 @@ $locale['blog_3000'] = "Nincs megjeleníthető blog";
 $locale['blog_3001'] = "Nincs Kategória";
 $locale['blog_3002'] = "Nincs Üzenet";
 $locale['blog_3003'] = "Nincs Szerző";
+$locale['blog_3004'] = "Legolvasottabb Blogok";
 $locale['testimonial_rank'] = "Én %s vagyok ezen az oldalon";
 $locale['testimonial_location'] = "Jelenleg %s élek";
 $locale['testimonial_join'] = "Ekkor csatlakoztam az oldalhoz: %s";
