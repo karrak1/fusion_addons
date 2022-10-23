@@ -1,0 +1,90 @@
+<?php
+// Panel Management
+$locale['PANEL_400'] = "Panelek";
+$locale['PANEL_401'] = "Panel neve";
+$locale['PANEL_402'] = "Oldal";
+$locale['PANEL_403'] = "Sorrend";
+$locale['PANEL_404'] = "Típus";
+$locale['PANEL_405'] = "Hozzáférés";
+$locale['PANEL_406'] = "Beállítások";
+$locale['PANEL_407'] = "Aktuális panelek";
+$locale['PANEL_408'] = "Panel hozzáadása";
+$locale['PANEL_409'] = "Panel szerkesztése";
+$locale['PANEL_410'] = "A paneleket fogd és vidd módszerrel tudod átrendezni.";
+// Panel Settings
+$locale['PANEL_420'] = "Bal";
+$locale['PANEL_421'] = "Fent középen";
+$locale['PANEL_422'] = "Jobb";
+$locale['PANEL_423'] = "Fájl";
+$locale['PANEL_424'] = "PHP";
+$locale['PANEL_425'] = "Lent középen";
+$locale['PANEL_426'] = "Fejléc alatt";
+$locale['PANEL_427'] = "Lábléc felett";
+$locale['PANEL_428a'] = "Felhasználó 1";
+$locale['PANEL_428b'] = "Felhasználó 2";
+$locale['PANEL_428c'] = "Felhasználó 3";
+$locale['PANEL_428d'] = "Felhasználó 4";
+// Panel Options1
+$locale['PANEL_430'] = "Mozgatás balra";
+$locale['PANEL_431'] = "Mozgatás jobbra";
+$locale['PANEL_432'] = "Mozgatás fel";
+$locale['PANEL_433'] = "Mozgatás le";
+$locale['PANEL_435'] = "Bekapcsol";
+$locale['PANEL_436'] = "Kikapcsol";
+$locale['PANEL_438'] = "Új panel";
+$locale['PANEL_439'] = "Panel sorrend frissítése";
+$locale['PANEL_440'] = "Biztosan törölni szeretnéd ezt a panelt?";
+$locale['PANEL_441'] = "Bal";
+$locale['PANEL_442'] = "jobb";
+$locale['PANEL_443'] = "Fel";
+$locale['PANEL_444'] = "Le";
+$locale['PANEL_445'] = "Feljebb mozgatás";
+$locale['PANEL_446'] = "Lejjebb mozgatás";
+// Add/Edit Panel Form
+$locale['PANEL_450'] = "Panel szerkesztése";
+$locale['PANEL_451'] = "Panel hozzáadása";
+$locale['PANEL_452'] = "Panel neve:";
+$locale['PANEL_453'] = "Panel mappája:";
+$locale['PANEL_454'] = "Panel tartalma figyelmen kívül lesz hagyva ha ezt választod";
+$locale['PANEL_455'] = "Panel tartalma:";
+$locale['PANEL_456'] = "Admin jelszavad:";
+$locale['PANEL_457'] = "Oldal:";
+$locale['PANEL_458'] = "Hozzáférés:";
+$locale['PANEL_459'] = "Panel megjelenítése minden oldalon";
+$locale['PANEL_460'] = "Előnézet";
+$locale['PANEL_461'] = "Mentés";
+$locale['PANEL_462'] = "Megjelenítés:";
+$locale['PANEL_463'] = "Példa:";
+$locale['PANEL_464'] = "Ezeken az oldalakon ne jelenjen meg";
+$locale['PANEL_465'] = "Csak ezeken az oldalakon jelenjen meg";
+$locale['PANEL_466'] = "Panel nyelve:";
+$locale['PANEL_467'] = "Csak a kezdőlapon jelenjen meg";
+$locale['PANEL_468'] = "Panel típusa";
+$locale['PANEL_469'] = "Nincs";
+$locale['PANEL_469a'] = "Tartalom";
+// Update/Add new Panel Errors
+$locale['PANEL_470'] = "Nincs megadva a panel neve";
+$locale['PANEL_471'] = "Ez a panelnév már használatban van";
+$locale['PANEL_472'] = "Nincs megadva a panel tartalma";
+$locale['PANEL_473'] = "Nincs megadva a panel fájlneve";
+$locale['PANEL_474'] = "Hibás jelszó";
+$locale['PANEL_475'] = "Jelöld be a \"Panel megjelenítése minden oldalon\" négyzetet, ha külön korlátozást akarsz beállítani";
+// Update/Add new Panel Success/Fail
+$locale['PANEL_480'] = "Panel módosítása";
+$locale['PANEL_481'] = "Nem lehet módosítani a panelt";
+$locale['PANEL_482'] = "Panel módosítva";
+$locale['PANEL_483'] = "Új panel hozzáadása";
+$locale['PANEL_484'] = "Nem lehet létrehozni az új panelt";
+$locale['PANEL_485'] = "Új panel létrehozva";
+$locale['PANEL_486'] = "Vissza a panelek adminisztrációjához";
+$locale['PANEL_487'] = "Vissza az admin főoldalra";
+$locale['PANEL_488'] = "Panel sorrend frissítve.";
+$locale['PANEL_489'] = "Panel törölve.";
+//Visual Panel
+$locale['PANEL_600'] = "Panel beállítások";
+$locale['PANEL_602'] = "Nem használt panelek";
+$locale['PANEL_603'] = "Használatban levő panelek";
+$locale['PANEL_604'] = "Panel|Panelek";
+// $locale['PANEL_605'] = "";
+$locale['PANEL_606'] = "Oldal tartalom";
+$locale['PANEL_607'] = "Fájl";
