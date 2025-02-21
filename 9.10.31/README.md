@@ -1,38 +1,60 @@
-# PHPFusion CMS
+## PHP-Fusion CMS Version 9.10.03A-DEV (Development)
 
-PHPFusion is a versatile and a very scalable CMS that lets you have more freedom to manage your websites.
-We aim to help you realise your content and design ideas more than ever.
+This is the updated Version 9.10.03 stable that is currently being used on phpfusion.com, and will be receiving further updates for issues.
 
-[Documentation](https://phpfusion.com/docs/) &middot; [Demos](https://demos.phpfusion.com/)
+All further development progress on the V9 latest standard should push to this branch. Do NOT push to 9.10.03 
 
-## Getting Started
+## Minimum Requirements:
+Technical Requirements to start using PHPFusion v9.10.03A will be as following:
 
-[Download stable release](https://www.php-fusion.co.uk/phpfusion_9_downloads.php)
+**PHP version:** 8.1.0 (Recommended 8.2)
 
-### Requirements
+**MYSQL version:** MYSQL 8.0.13 (Recommended MySQL 8.1)
 
-PHPFusion requires a web server with PHP and a MySQL database.
-Accessing the backend through a supported browser.
+**Others**: OpCache (strongly recommended), Redis, Memcached, GDLib, Internationalization packages should be enabled on Apache.
 
-Minimum requirements for PHPFusion 9
+## Developer Welcome Guide
+This guide will help you get started with PHPFusion development. It covers setting up your environment, installing necessary tools, and configuring your IDE.
 
-- PHP 7.0 or greater
-- MySQL version 5.6 or greater or MariaDB version 10.1 or greater
-- HTTP server, we recommend Apache 2.4 or greater
-- mod_rewrite or equivalent for SEO
+If you are keen on creating new web software like the rest of the world, you should be ready to dive into PHPFusion development. This guide will help you get started with setting up your environment, installing necessary tools, and configuring your IDE.
 
-### Installation
+## Getting Started with PHPFusion Development
+This guide will help you get started with setting up your environment, installing necessary tools, and configuring your IDE.
 
-Please read [installation guide](https://phpfusion.com/docs/phpfusion-9-documentation/4-installation).
+### Setting up PHPFusion working environment.
+This is a guide to accellerate your programming IDE setup for PHPFusion v9.10.03A. Time to update your Notepad++ to another free IDE like VS Code from Microsoft. 
+The advantage of using IDE is that it provides a rich set of features like code completion, syntax highlighting, debugging tools, and more. It also allows you to write cleaner and more maintainable code.
 
-### Upgrade from older versions
+### Install VS Code
+Download and install Visual Studio Code from [here](https://code.visualstudio.com/).
 
-Please read [upgrade guide](https://phpfusion.com/docs/phpfusion-9-documentation/5-upgrading).
+### Install Node.js
+-Go to the official Node.js website: https://nodejs.org/.
+-Download the LTS version (recommended for most users).
 
-## Support
+### Install LESS Globally via npm
+Now that you have Node.js installed, you can install LESS globally on your system
+1. Open Command Prompt or PowerShell.
+2. Install LESS: Run the following command to install LESS globally using npm:
 
-[Forum](https://phpfusion.com/infusions/forum/)
+```bash
+npm install -g less
+```
+The -g flag ensures that LESS is installed globally, allowing you to use it from anywhere on your system.
 
-[Discord](https://discord.gg/nuaAYbV)
+### Using LESS 
+Now that LESS is installed, you can start using it to compile .less files into .css files.
 
-<!-- Do not judge the product if you have not tried it ;) -->
+Compile LESS to CSS: For example, to compile a main.less file into a main.css file, use the following command in your terminal:
+```bash
+lessc main.less main.css
+```
+If you want to minify the output CSS, use the --clean-css option:
+```bash
+lessc --clean-css main.less main.min.css
+```
+
+### Style Editing - The easy way
+After you installed less, in VSCode, Go Terminal, select Run Task. With task.json file in the root directory, you can just select and run the task accordingly. Editing .less files are very convenient as they are just like ordinary .css but with more powerful nest and function. 
+
+
