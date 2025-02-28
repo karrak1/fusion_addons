@@ -38,8 +38,6 @@ if (!check_admin_pass('')) {
     define('THEME_BODY', '<body class="hold-transition skin-blue sidebar-mini">');
 }
 
-fusion_load_script(INCLUDES . "jquery/jquery.fusion-objects.js");
-
 function render_admin_panel() {
     new AdminLTE\AdminPanel();
 }
@@ -74,78 +72,6 @@ function opentable($title = NULL, $class = NULL, $bg = TRUE) {
 
 function closetable($bg = TRUE) {
     AdminLTE\AdminPanel::closeTable($bg);
-}
-
-// Fusion OBjects UI Kits (Put here temporarily before moving this to a dedicated file)
-
-/**
- * Open offcanvas dialog
- * @param [type] $id - The unique identifier for the offcanvas dialog
- * @param [type] $title - The title of the offcanvas dialog
- * @return void
- */
-function opencanvas($id, $title = "")
-{
-    // Open the offcanvas structure with dynamic ID
-    echo "<div class='offcanvas' id='$id'>";
-    echo "<div class='offcanvas-content'>";
-
-    // Title of the offcanvas (if provided)
-    echo "<div class='offcanvas-header'>";
-    if ($title) {
-        echo "<h3>$title</h3>";
-    }
-    // Close button with data-pf-toggle attribute
-    echo "<button class='close-btn' data-pf-toggle='$id'><i class='fa fa-times'></i></button>";
-    echo "</div>";
-
-    // Body of the offcanvas
-    echo "<div class='offcanvas-body'>";
-}
-
-/**
- * Close offcanvas dialog
- * @param [type] $id - The unique identifier for the offcanvas dialog
- * @return void
- */
-function closecanvas($id)
-{
-    // Close the offcanvas body and content
-    echo "</div></div></div>";
-
-    // Add the overlay that corresponds to the offcanvas ID
-    echo "<div class='offcanvas-overlay' id='overlay-$id'></div>";
-}
-
-/**
- * Open swapbox
- * 
- * Usage:
- * ----
- * $id = 'swapbox';
- * <h4><a href="#" data-pf-toggle="swap" data-toggle-id="$id"><i class="fa fa-plus"></i> Swap</a></h4>                                    
- *  openswap(id: $id);
- *  echo 'Swap content is shown here';
- *  closeswap(id: $id);
- *
- * @param [type] $id - The unique identifier for the swap box 
- * @param [type] $title - The title link of the swap box 
- * @return void
- */
-function openswap($id, $title) {
-    echo "<div id='$id' class='swapbox'>";
-    echo "<h4 class='swap-title display-block'><a href='#' data-pf-toggle='swap' data-toggle-id='$id' class='display-inline-block'>$title</a><h4>";
-    echo "<div class='swap-box clearfix' style='display:none;'>";
-}
-/**
- * Close swapbox
- * @param [type] $id - The unique identifier for the swap box 
- * @return void
- */
-function closeswap($id)
-{
-    echo "<a href='#' class='hide-swap bold pull-right text-smaller' data-pf-toggle='swap' data-toggle-id='$id'>Close</a></div>";
-    echo "</div>";
 }
 
 add_handler(function ($output = '') {
